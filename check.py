@@ -54,3 +54,14 @@ for p in pubs:
         assert p['status'] == 'published'
         assert (ROOT / p['toc']['image']).is_file()
         assert escape(p['toc']['alt']) in (ROOT / 'publications.html').read_text()
+
+assert sum('toc' in p for p in pubs) == 30
+for p in pubs:
+    assert ('toc' in p) == (p['status'] == 'published')
+    if 'toc' in p:
+        assert p['toc']['image'].startswith('assets/toc/')
+page = (ROOT / 'publications.html').read_text()
+assert page.count('<figure class="publication-toc">') == 30
+assert not re.search(r'<a[^>]*class="publication-toc', page)
+for figure in re.findall(r'<figure class="publication-toc">.*?</figure>', page):
+    assert '<a ' not in figure

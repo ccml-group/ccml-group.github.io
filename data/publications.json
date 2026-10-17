@@ -6,7 +6,8 @@
     "title": "Accurate Modelling of Complex Mixed-Metal Oxide Surfaces at the Atomic Scale",
     "doi": "",
     "year": 2026,
-    "status": "submitted"
+    "status": "submitted",
+    "toc_status": "awaiting-publication"
   },
   {
     "number": 35,
@@ -15,7 +16,8 @@
     "title": "Strain Engineering for Deviating from the Schottky-Mott Limit in MoS₂/Metal Heterojunction",
     "doi": "",
     "year": 2026,
-    "status": "submitted"
+    "status": "submitted",
+    "toc_status": "awaiting-publication"
   },
   {
     "number": 34,
@@ -24,7 +26,8 @@
     "title": "Zwitterionic Thermoplastic Polyurethane-Based Quasi-Solid Polymer Electrolytes for Lithium Metal Batteries with Machine-Learning-Assisted Mechanistic Insights",
     "doi": "",
     "year": 2026,
-    "status": "submitted"
+    "status": "submitted",
+    "toc_status": "awaiting-publication"
   },
   {
     "number": 33,
@@ -33,7 +36,8 @@
     "title": "Activity-Enhancement of TiO₂-Supported Ir-Based OER Electrocatalysts by Controlled Design of the Ir|Ti Interface",
     "doi": "",
     "year": 2026,
-    "status": "submitted"
+    "status": "submitted",
+    "toc_status": "awaiting-publication"
   },
   {
     "number": 32,
@@ -42,7 +46,8 @@
     "title": "Oxygen-Promoted Dehydrogenation on Size-Selected Cu-Pd Pentamer Clusters for Low-Temperature Hydrogen Release from Cyclic Hydrocarbons",
     "doi": "",
     "year": 2026,
-    "status": "accepted"
+    "status": "accepted",
+    "toc_status": "awaiting-publication"
   },
   {
     "number": 31,
@@ -51,7 +56,8 @@
     "title": "From Candidate Surfaces to Catalytic Ensembles: MLIPs for Structure Discovery and Dynamics under Operating Conditions",
     "doi": "",
     "year": 2026,
-    "status": "accepted"
+    "status": "accepted",
+    "toc_status": "awaiting-publication"
   },
   {
     "number": 30,
@@ -60,7 +66,14 @@
     "title": "Size and Oxidation State Tracking of Dynamic Rh Catalysts on Rutile TiO₂ by Ambient-Pressure XPS",
     "doi": "https://doi.org/10.1039/D6TA02069K",
     "year": 2026,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-30.png",
+      "alt": "Graphical abstract: Size and Oxidation State Tracking of Dynamic Rh Catalysts on Rutile TiO₂ by Ambient-Pressure XPS",
+      "source": "https://doi.org/10.1039/D6TA02069K",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 29,
@@ -69,7 +82,14 @@
     "title": "Retarding Moisture-Induced Chemical Degradation of Yttrium Tellurides by Tailoring Grain Boundary Chemistry",
     "doi": "https://doi.org/10.1038/s41467-026-76056-8",
     "year": 2026,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-29.png",
+      "alt": "Figure 1: Retarding Moisture-Induced Chemical Degradation of Yttrium Tellurides by Tailoring Grain Boundary Chemistry",
+      "source": "https://doi.org/10.1038/s41467-026-76056-8",
+      "kind": "figure"
+    },
+    "toc_status": "available"
   },
   {
     "number": 28,
@@ -78,7 +98,14 @@
     "title": "Surface Reconstruction Tunes Band Edges and Lattice-Oxygen Reactivity on BiVO₄(010) Photoanodes",
     "doi": "https://doi.org/10.1039/D5TA10136K",
     "year": 2026,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-28.png",
+      "alt": "Graphical abstract: Surface Reconstruction Tunes Band Edges and Lattice-Oxygen Reactivity on BiVO₄(010) Photoanodes",
+      "source": "https://doi.org/10.1039/D5TA10136K",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 27,
@@ -89,10 +116,12 @@
     "year": 2026,
     "status": "published",
     "toc": {
-      "image": "assets/toc/publication-27.png",
-      "alt": "Graphical abstract linking kinetic and data-driven models in a hybrid model of Rh catalyst ripening",
-      "source": "https://sites.google.com/view/ccml-group/publications"
-    }
+      "image": "assets/toc/publication-27-official.svg",
+      "alt": "Graphical abstract: Ripening of Rh Nanoparticle Catalysts in Reverse Water-Gas Shift via a Data-Driven Model Combining Physics, Theory, and Experiment",
+      "source": "https://doi.org/10.1021/acscatal.6c01516",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 26,
@@ -101,7 +130,14 @@
     "title": "Fine-Tuning Bulk-Oriented Universal Interatomic Potentials for Surfaces: Accuracy, Efficiency, and Forgetting Control",
     "doi": "https://doi.org/10.1016/j.commatsci.2026.114666",
     "year": 2026,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-26.png",
+      "alt": "Graphical abstract: Fine-Tuning Bulk-Oriented Universal Interatomic Potentials for Surfaces: Accuracy, Efficiency, and Forgetting Control",
+      "source": "https://arxiv.org/abs/2509.25807",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 25,
@@ -110,7 +146,14 @@
     "title": "The Crucial Role of Hydrogen Ligation in the Stability of Single Atoms on Rutile TiO₂: A First-Principles Study",
     "doi": "https://doi.org/10.1021/acsami.5c24310",
     "year": 2026,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-25.png",
+      "alt": "Graphical abstract: The Crucial Role of Hydrogen Ligation in the Stability of Single Atoms on Rutile TiO₂: A First-Principles Study",
+      "source": "https://doi.org/10.1021/acsami.5c24310",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 24,
@@ -119,7 +162,14 @@
     "title": "Defect-Driven Redox Interplay on Anatase TiO₂: Surface-Structure Dependent Activation for CO₂ Hydrogenation Catalysis",
     "doi": "https://doi.org/10.1021/jacs.5c06076",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-24.png",
+      "alt": "Graphical abstract: Defect-Driven Redox Interplay on Anatase TiO₂: Surface-Structure Dependent Activation for CO₂ Hydrogenation Catalysis",
+      "source": "https://doi.org/10.1021/jacs.5c06076",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 23,
@@ -128,7 +178,14 @@
     "title": "Bimetallic-GDC Nanowire Catalyst as a Cathode Surface Modifier for Enhancing the Oxygen Reduction Reaction and Suppressing Cation Segregation in Low-Temperature Solid Oxide Fuel Cells",
     "doi": "https://doi.org/10.1021/acscatal.5c00756",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-23.png",
+      "alt": "Graphical abstract: Bimetallic-GDC Nanowire Catalyst as a Cathode Surface Modifier for Enhancing the Oxygen Reduction Reaction and Suppressing Cation Segregation in Low-Temperature Solid Oxide Fuel Cells",
+      "source": "https://doi.org/10.1021/acscatal.5c00756",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 22,
@@ -137,7 +194,14 @@
     "title": "An Atomic-Scale View at γ’-Fe₄N as Hydrogen Barrier Material",
     "doi": "https://doi.org/10.1002/admi.202500207",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-22.png",
+      "alt": "Figure 1: An Atomic-Scale View at γ’-Fe₄N as Hydrogen Barrier Material",
+      "source": "https://doi.org/10.1002/admi.202500207",
+      "kind": "figure"
+    },
+    "toc_status": "available"
   },
   {
     "number": 21,
@@ -146,7 +210,14 @@
     "title": "Synergetic Oxide-Chalcogenide Heterostructure in Metallic Two-Dimensional VSe₂ for the Hydrogen Evolution Reaction",
     "doi": "https://doi.org/10.1039/D5TA00991J",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-21.png",
+      "alt": "Graphical abstract: Synergetic Oxide-Chalcogenide Heterostructure in Metallic Two-Dimensional VSe₂ for the Hydrogen Evolution Reaction",
+      "source": "https://doi.org/10.1039/D5TA00991J",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 20,
@@ -158,9 +229,11 @@
     "status": "published",
     "toc": {
       "image": "assets/toc/publication-20.png",
-      "alt": "Graphical abstract of machine-learning exploration of rutile TiO₂ reconstructions with simulated and experimental microscopy",
-      "source": "https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202501017"
-    }
+      "alt": "Graphical abstract: Machine-Learning-Driven Exploration of Surface Reconstructions of Reduced Rutile TiO₂",
+      "source": "https://doi.org/10.1002/anie.202501017",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 19,
@@ -169,7 +242,14 @@
     "title": "Best Practices for In-situ and Operando Techniques within Electrocatalytic Systems",
     "doi": "https://doi.org/10.1038/s41467-025-57563-6",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-19.png",
+      "alt": "Figure 1: Best Practices for In-situ and Operando Techniques within Electrocatalytic Systems",
+      "source": "https://doi.org/10.1038/s41467-025-57563-6",
+      "kind": "figure"
+    },
+    "toc_status": "available"
   },
   {
     "number": 18,
@@ -180,10 +260,12 @@
     "year": 2025,
     "status": "published",
     "toc": {
-      "image": "assets/toc/publication-18.png",
-      "alt": "Graphical abstract comparing stoichiometric and reconstructed BiVO₄ aqueous interfaces",
-      "source": "https://sites.google.com/view/ccml-group/publications"
-    }
+      "image": "assets/toc/publication-18-official.png",
+      "alt": "Graphical abstract: Machine-Learning-Accelerated Surface Exploration of Reconstructed BiVO₄(010) and Characterization of Their Aqueous Interfaces",
+      "source": "https://doi.org/10.1021/jacs.4c17739",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 17,
@@ -195,9 +277,11 @@
     "status": "published",
     "toc": {
       "image": "assets/toc/publication-17.png",
-      "alt": "Graphical abstract of operando X-ray spectroscopy and DFT describing active sites and Ir vacancies in hydrous iridium oxide",
-      "source": "https://doi.org/10.1039/D4EE02839B"
-    }
+      "alt": "Graphical abstract: Unravelling the Mechanistic Complexity of the Oxygen Evolution Reaction and Ir Dissolution in Highly Dimensional Amorphous Hydrous Iridium Oxides",
+      "source": "https://doi.org/10.1039/D4EE02839B",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 16,
@@ -206,7 +290,14 @@
     "title": "Linking Bulk and Surface Structures in Complex Mixed Oxides",
     "doi": "https://doi.org/10.1021/acscatal.3c05230",
     "year": 2024,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-16.png",
+      "alt": "Graphical abstract: Linking Bulk and Surface Structures in Complex Mixed Oxides",
+      "source": "https://doi.org/10.1021/acscatal.3c05230",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 15,
@@ -215,7 +306,14 @@
     "title": "Staged Training of Machine-Learning Potentials from Small to Large Surface Unit Cells: Efficient Global Structure Determination of the RuO₂(100)-c(2×2) Reconstruction and (410) Vicinal",
     "doi": "https://doi.org/10.1021/acs.jpcc.3c04049",
     "year": 2023,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-15.png",
+      "alt": "Graphical abstract: Staged Training of Machine-Learning Potentials from Small to Large Surface Unit Cells: Efficient Global Structure Determination of the RuO₂(100)-c(2×2) Reconstruction and (410) Vicinal",
+      "source": "https://doi.org/10.1021/acs.jpcc.3c04049",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 14,
@@ -224,7 +322,14 @@
     "title": "Dopant Evolution in Electrocatalysts after Hydrogen Oxidation Reaction in an Alkaline Environment",
     "doi": "https://doi.org/10.1021/acsenergylett.3c00842",
     "year": 2023,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-14.png",
+      "alt": "Graphical abstract: Dopant Evolution in Electrocatalysts after Hydrogen Oxidation Reaction in an Alkaline Environment",
+      "source": "https://doi.org/10.1021/acsenergylett.3c00842",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 13,
@@ -233,7 +338,14 @@
     "title": "Black Box vs. Grey Box: Comparing GAP and GPrep-DFTB for Ruthenium and Ruthenium Oxide",
     "doi": "https://doi.org/10.1063/5.0141233",
     "year": 2023,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-13.jpg",
+      "alt": "Figure 1: Black Box vs. Grey Box: Comparing GAP and GPrep-DFTB for Ruthenium and Ruthenium Oxide",
+      "source": "https://doi.org/10.1063/5.0141233",
+      "kind": "figure"
+    },
+    "toc_status": "available"
   },
   {
     "number": 12,
@@ -242,7 +354,14 @@
     "title": "Oxidic Structures on Copper-Gold Alloy Nanofacets",
     "doi": "https://doi.org/10.1016/j.apsusc.2022.155913",
     "year": 2023,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-12.jpg",
+      "alt": "Graphical abstract: Oxidic Structures on Copper-Gold Alloy Nanofacets",
+      "source": "https://doi.org/10.1016/j.apsusc.2022.155913",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 11,
@@ -251,7 +370,14 @@
     "title": "Epitaxial Core-Shell Oxide Nanoparticles: First-Principles Evidence for Increased Activity and Stability of Rutile Catalysts for Acidic Oxygen Evolution",
     "doi": "https://doi.org/10.1002/cssc.202200015",
     "year": 2022,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-11.png",
+      "alt": "Graphical abstract: Epitaxial Core-Shell Oxide Nanoparticles: First-Principles Evidence for Increased Activity and Stability of Rutile Catalysts for Acidic Oxygen Evolution",
+      "source": "https://doi.org/10.1002/cssc.202200015",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 10,
@@ -260,7 +386,14 @@
     "title": "Data-Efficient Iterative Training of Gaussian Approximation Potentials: Application to Surface Structure Determination of Rutile IrO₂ and RuO₂",
     "doi": "https://doi.org/10.1063/5.0071249",
     "year": 2021,
-    "status": "published"
+    "status": "published",
+    "toc_status": "available",
+    "toc": {
+      "image": "assets/toc/publication-10.png",
+      "alt": "Figure 1: Data-Efficient Iterative Training of Gaussian Approximation Potentials: Application to Surface Structure Determination of Rutile IrO₂ and RuO₂",
+      "source": "https://pure.mpg.de/rest/items/item_3351684_8/component/file_3360380/content",
+      "kind": "figure"
+    }
   },
   {
     "number": 9,
@@ -269,7 +402,14 @@
     "title": "IrO₂ Surface Complexions Identified through Machine Learning and Surface Investigations",
     "doi": "https://doi.org/10.1103/PhysRevLett.125.206101",
     "year": 2020,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-9.png",
+      "alt": "Figure 1: IrO₂ Surface Complexions Identified through Machine Learning and Surface Investigations",
+      "source": "https://arxiv.org/abs/2009.11569",
+      "kind": "figure"
+    },
+    "toc_status": "available"
   },
   {
     "number": 8,
@@ -278,7 +418,14 @@
     "title": "Ruthenium Oxide Nanosheets for Enhanced Oxygen Evolution Catalysis in Acidic Medium",
     "doi": "https://doi.org/10.1002/aenm.201803795",
     "year": 2019,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-8.jpg",
+      "alt": "Graphical abstract: Ruthenium Oxide Nanosheets for Enhanced Oxygen Evolution Catalysis in Acidic Medium",
+      "source": "https://doi.org/10.1002/aenm.201803795",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 7,
@@ -287,7 +434,14 @@
     "title": "Polytypism in Hexagonal Tungsten Trioxide: Insights from Ab Initio Molecular Dynamics Simulations",
     "doi": "https://doi.org/10.1021/acs.jpcc.8b05595",
     "year": 2018,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-7.png",
+      "alt": "Graphical abstract: Polytypism in Hexagonal Tungsten Trioxide: Insights from Ab Initio Molecular Dynamics Simulations",
+      "source": "https://doi.org/10.1021/acs.jpcc.8b05595",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 6,
@@ -296,7 +450,14 @@
     "title": "Disentangling the Effects of Inter- and Intra-octahedral Distortions on the Electronic Structure in Binary Metal Trioxides",
     "doi": "https://doi.org/10.1021/acs.jpcc.7b11295",
     "year": 2019,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-6.png",
+      "alt": "Graphical abstract: Disentangling the Effects of Inter- and Intra-octahedral Distortions on the Electronic Structure in Binary Metal Trioxides",
+      "source": "https://doi.org/10.1021/acs.jpcc.7b11295",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 5,
@@ -305,7 +466,14 @@
     "title": "Aligning the Band Structures of Polymorphic Molybdenum Oxides and Organic Emitters in Light-emitting Diodes",
     "doi": "https://doi.org/10.1103/PhysRevApplied.7.024025",
     "year": 2017,
-    "status": "published"
+    "status": "published",
+    "toc_status": "available",
+    "toc": {
+      "image": "assets/toc/publication-5.png",
+      "alt": "Author-selected graphic: Aligning the Band Structures of Polymorphic Molybdenum Oxides and Organic Emitters in Light-emitting Diodes",
+      "source": "https://sites.google.com/view/jang-group/publications",
+      "kind": "author-graphic"
+    }
   },
   {
     "number": 4,
@@ -314,7 +482,14 @@
     "title": "Ab Initio Thermodynamics of Surface Oxide Structures under Controlled Growth Conditions",
     "doi": "https://doi.org/10.1021/acs.jpcc.6b11445",
     "year": 2017,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-4.png",
+      "alt": "Graphical abstract: Ab Initio Thermodynamics of Surface Oxide Structures under Controlled Growth Conditions",
+      "source": "https://doi.org/10.1021/acs.jpcc.6b11445",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 3,
@@ -323,7 +498,14 @@
     "title": "Understanding the Advantage of Hexagonal WO₃ as an Efficient Photoanode for Solar Water Splitting: A First-Principles Perspective",
     "doi": "https://doi.org/10.1039/C6TA03659G",
     "year": 2016,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-3.png",
+      "alt": "Graphical abstract: Understanding the Advantage of Hexagonal WO₃ as an Efficient Photoanode for Solar Water Splitting: A First-Principles Perspective",
+      "source": "https://doi.org/10.1039/C6TA03659G",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 2,
@@ -332,7 +514,14 @@
     "title": "Unraveling the Intercalation Chemistry of Hexagonal Tungsten Bronze and its Optical Responses",
     "doi": "https://doi.org/10.1021/acs.chemmater.5b03980",
     "year": 2016,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-2.png",
+      "alt": "Graphical abstract: Unraveling the Intercalation Chemistry of Hexagonal Tungsten Bronze and its Optical Responses",
+      "source": "https://doi.org/10.1021/acs.chemmater.5b03980",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   },
   {
     "number": 1,
@@ -341,6 +530,13 @@
     "title": "In Search of Non-conventional Surface Oxidic Motifs of Cu on Au(111)",
     "doi": "https://doi.org/10.1039/C5CP07932B",
     "year": 2016,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-1.png",
+      "alt": "Graphical abstract: In Search of Non-conventional Surface Oxidic Motifs of Cu on Au(111)",
+      "source": "https://doi.org/10.1039/C5CP07932B",
+      "kind": "graphical-abstract"
+    },
+    "toc_status": "available"
   }
 ]
