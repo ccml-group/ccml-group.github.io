@@ -38,3 +38,7 @@ The four research themes and their Korean descriptions were provided by the lab 
 
 ## Scholar update — 2026-10-17
 Google Scholar 프로필의 All 열과 연도별 그래프를 브라우저에서 직접 확인했습니다. 전체 인용 1,122, h-index 15, i10-index 17, 2026년 인용 376. 표시된 2017–2025년 값은 이전과 같습니다. 그래프 합계를 전체 인용 수에 맞추어 보정하지 않았으며, 이번 갱신은 수동 수집입니다.
+
+## Publication graphical abstracts (2026-10-17)
+
+Papers #18 (JACS, DOI 10.1021/jacs.4c17739) and #27 (ACS Catalysis, DOI 10.1021/acscatal.6c01516): original article preview images from the lab’s public publications page, https://sites.google.com/view/ccml-group/publications. CSS displays the graphical abstract region without modifying the source images. Each image links to its paper. Other papers have no verified TOC asset and remain text-only.

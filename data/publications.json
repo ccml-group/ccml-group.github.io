@@ -87,7 +87,12 @@
     "title": "Ripening of Rh Nanoparticle Catalysts in Reverse Water-Gas Shift via a Data-Driven Model Combining Physics, Theory, and Experiment",
     "doi": "https://doi.org/10.1021/acscatal.6c01516",
     "year": 2026,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-27.png",
+      "alt": "Graphical abstract linking kinetic and data-driven models in a hybrid model of Rh catalyst ripening",
+      "source": "https://sites.google.com/view/ccml-group/publications"
+    }
   },
   {
     "number": 26,
@@ -168,7 +173,12 @@
     "title": "Machine-Learning-Accelerated Surface Exploration of Reconstructed BiVO₄(010) and Characterization of Their Aqueous Interfaces",
     "doi": "https://doi.org/10.1021/jacs.4c17739",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-18.png",
+      "alt": "Graphical abstract comparing stoichiometric and reconstructed BiVO₄ aqueous interfaces",
+      "source": "https://sites.google.com/view/ccml-group/publications"
+    }
   },
   {
     "number": 17,

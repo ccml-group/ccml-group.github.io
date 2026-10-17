@@ -31,6 +31,9 @@ jobs:
         run: |
           if [ -n "$SERPAPI_API_KEY" ]; then
             echo "enabled=true" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" != "push" ]; then
+            echo "::error::Add repository secret SERPAPI_API_KEY to enable Scholar updates."
+            exit 1
           fi
       - name: Refresh Scholar on weekly or manual runs
         if: github.event_name != 'push' && steps.scholar-config.outputs.enabled == 'true'

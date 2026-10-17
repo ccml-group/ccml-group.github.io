@@ -30,3 +30,11 @@
 .anchor-alias{position:absolute;top:0;scroll-margin-top:90px}
 @media(max-width:900px){.research-feature{gap:32px}.research-card-copy{padding:24px 42px 24px 24px}}
 @media(max-width:600px){.visual-research-card{padding:0}.research-feature{grid-template-columns:1fr;gap:30px}.research-feature:nth-of-type(odd) .research-art{order:0}.research-feature-copy .number{margin-bottom:18px}}
+
+/* Display only the graphical-abstract area of the original article preview. */
+.publication.has-toc{grid-template-columns:45px minmax(0,1fr) 240px;align-items:start}
+.publication-toc{position:relative;display:block;overflow:hidden;background:white;border:1px solid var(--line);border-radius:6px;margin-top:6px}
+.publication-toc img{position:absolute;max-width:none;height:auto}
+.toc-18{aspect-ratio:500/192}.toc-18 img{width:256%;left:-144%;top:-285.417%}
+.toc-27{aspect-ratio:304/164}.toc-27 img{width:253.947%;left:-142.434%;top:-216.463%}
+@media(max-width:800px){.publication.has-toc{grid-template-columns:27px minmax(0,1fr)}.publication-toc{grid-column:2;width:min(100%,300px)}}

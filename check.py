@@ -42,6 +42,15 @@ assert sum(bool(p['doi']) for p in pubs) == 30
 for p in pubs:
     assert pages['publications.html'].publications[f"pub-{p['number']}"] == (str(p['year']), p['status'])
     assert p['title'] and p['authors'] and p['journal']
-    article = re.search(r'<article class="publication" id="pub-' + str(p['number']) + r'".*?</article>', (ROOT / 'publications.html').read_text()).group()
+    article = re.search(r'<article class="publication(?: has-toc)?" id="pub-' + str(p['number']) + r'".*?</article>', (ROOT / 'publications.html').read_text()).group()
     assert all(escape(p[key]) in article for key in ('title', 'authors', 'journal', 'doi'))
 print('PASS: 7 pages; local assets, links and anchors; 36 publication records and statuses.')
+
+assert set(pages['index.html'].publications) == {'pub-27', 'pub-20', 'pub-18', 'pub-17'}
+news = (ROOT / 'news.html').read_text()
+assert news.count('class="news-row"') == 1 and 'Open call' in news
+for p in pubs:
+    if 'toc' in p:
+        assert p['status'] == 'published'
+        assert (ROOT / p['toc']['image']).is_file()
+        assert escape(p['toc']['alt']) in (ROOT / 'publications.html').read_text()
