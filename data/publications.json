@@ -1,0 +1,326 @@
+[
+  {
+    "number": 36,
+    "journal": "Manuscript, 2026, Submitted",
+    "authors": "K. Nam, Y. Song, Y. Lee, L. Masliuk, A. Trunschke, T. Lunkenbein, K. Reuter, and C. Scheurer",
+    "title": "Accurate Modelling of Complex Mixed-Metal Oxide Surfaces at the Atomic Scale",
+    "doi": "",
+    "year": 2026,
+    "status": "submitted"
+  },
+  {
+    "number": 35,
+    "journal": "Manuscript, 2026, Submitted",
+    "authors": "H. Lee, K. Lee, H.-S. Kim, Y. Lee, Y.-K. Lee, T. Purcell, T. Lee, and K. Heo",
+    "title": "Strain Engineering for Deviating from the Schottky-Mott Limit in MoS₂/Metal Heterojunction",
+    "doi": "",
+    "year": 2026,
+    "status": "submitted"
+  },
+  {
+    "number": 34,
+    "journal": "Manuscript, 2026, Submitted",
+    "authors": "H. Na, K. Nam, Y. Lee*, and S.-K. Kim*",
+    "title": "Zwitterionic Thermoplastic Polyurethane-Based Quasi-Solid Polymer Electrolytes for Lithium Metal Batteries with Machine-Learning-Assisted Mechanistic Insights",
+    "doi": "",
+    "year": 2026,
+    "status": "submitted"
+  },
+  {
+    "number": 33,
+    "journal": "Manuscript, 2026, Submitted",
+    "authors": "M. van der Merwe†, Y. Lee†, L. Lahn, A. Steigert, E. P. Wibowo, T.-E. Hsieh, J. Frisch, M. Gorgoi, A. Efimenko, T. Henschel, R. G. Wilks, A. N. Alexandrova, O. Kasian, M. Bär, and R. Garcia-Diez",
+    "title": "Activity-Enhancement of TiO₂-Supported Ir-Based OER Electrocatalysts by Controlled Design of the Ir|Ti Interface",
+    "doi": "",
+    "year": 2026,
+    "status": "submitted"
+  },
+  {
+    "number": 32,
+    "journal": "ACS Nano, 2026, Accepted",
+    "authors": "M. Vaidulych†, Y. Lee†, F. Loi, P. Vitek, M. Vorochta, S. Valtera, I. Khalakhan, C. De Melo Sanchez, S. Chakraborty, K. Simkovičová, Y. Garreau, B. Voisin, J. Rodriguez-Pereira, J. Macak, M. Bunian, M. Jang, Y. Lei, P. Sautet, I. Matolinová, A. Coati, P. Andreazza, A. N. Alexandrova, and S. Vajda",
+    "title": "Oxygen-Promoted Dehydrogenation on Size-Selected Cu-Pd Pentamer Clusters for Low-Temperature Hydrogen Release from Cyclic Hydrocarbons",
+    "doi": "",
+    "year": 2026,
+    "status": "accepted"
+  },
+  {
+    "number": 31,
+    "journal": "Chem Catalysis, 2026, Accepted",
+    "authors": "H. Lee, S. Kang*, Y. Lee*, and T. Lee*",
+    "title": "From Candidate Surfaces to Catalytic Ensembles: MLIPs for Structure Discovery and Dynamics under Operating Conditions",
+    "doi": "",
+    "year": 2026,
+    "status": "accepted"
+  },
+  {
+    "number": 30,
+    "journal": "Journal of Materials Chemistry A, 2026, 14, 34600–34612",
+    "authors": "S. M. Gericke, J. Erbez, X. Chen, A. Khan, Z. Chen, Y. Lee, S. Hong, J. Heinlein, E. K. Schroeder, S. Bac, J. Novak, M. Blum, S. Nemšák, P. Christopher, M. Cargnello, A. S. Hoffman, S. R. Bare, S. Tenney, J. C. Yang, A. N. Alexandrova, and A. R. Head",
+    "title": "Size and Oxidation State Tracking of Dynamic Rh Catalysts on Rutile TiO₂ by Ambient-Pressure XPS",
+    "doi": "https://doi.org/10.1039/D6TA02069K",
+    "year": 2026,
+    "status": "published"
+  },
+  {
+    "number": 29,
+    "journal": "Nature Communications, 2026, 17, 9096",
+    "authors": "K. Jang*, J. U. Rahman, S.-H. Yoo, C. Jung, E. Woods, R. B. Villoro, K. Nielsch, C. Scheu, Y. Lee*, P.-P. Choi*, R. He*, and S. Zhang*",
+    "title": "Retarding Moisture-Induced Chemical Degradation of Yttrium Tellurides by Tailoring Grain Boundary Chemistry",
+    "doi": "https://doi.org/10.1038/s41467-026-76056-8",
+    "year": 2026,
+    "status": "published"
+  },
+  {
+    "number": 28,
+    "journal": "Journal of Materials Chemistry A, 2026, 14, 27568–27576",
+    "authors": "Y. Lee, C. Cho, K.-T. Lee, and T. Lee",
+    "title": "Surface Reconstruction Tunes Band Edges and Lattice-Oxygen Reactivity on BiVO₄(010) Photoanodes",
+    "doi": "https://doi.org/10.1039/D5TA10136K",
+    "year": 2026,
+    "status": "published"
+  },
+  {
+    "number": 27,
+    "journal": "ACS Catalysis, 2026, 16, 10398–10410",
+    "authors": "N. M. Isenberg†, Y. Lee†, C. C. Tedesco, Z. Chen, A. N. Alexandrova, C. J. Tassone, R. Rallo, and S. R. Bare",
+    "title": "Ripening of Rh Nanoparticle Catalysts in Reverse Water-Gas Shift via a Data-Driven Model Combining Physics, Theory, and Experiment",
+    "doi": "https://doi.org/10.1021/acscatal.6c01516",
+    "year": 2026,
+    "status": "published"
+  },
+  {
+    "number": 26,
+    "journal": "Computational Materials Science, 2026, 268, 114666",
+    "authors": "J. Hwang, T. Lee, Y. Lee*, and S.-H. Yoo*",
+    "title": "Fine-Tuning Bulk-Oriented Universal Interatomic Potentials for Surfaces: Accuracy, Efficiency, and Forgetting Control",
+    "doi": "https://doi.org/10.1016/j.commatsci.2026.114666",
+    "year": 2026,
+    "status": "published"
+  },
+  {
+    "number": 25,
+    "journal": "ACS Applied Materials & Interfaces, 2026, 18, 12156–12168",
+    "authors": "S. Ghoshal, C. Ezeakunne, Y. Lee, A. N. Alexandrova, and S. Kattel",
+    "title": "The Crucial Role of Hydrogen Ligation in the Stability of Single Atoms on Rutile TiO₂: A First-Principles Study",
+    "doi": "https://doi.org/10.1021/acsami.5c24310",
+    "year": 2026,
+    "status": "published"
+  },
+  {
+    "number": 24,
+    "journal": "Journal of the American Chemical Society, 2025, 147, 43273–43285",
+    "authors": "X. Chen, Y. Lee, S. Hong, E. K. Schroeder, S. M. Gericke, G. D. Barber, Z. Chen, S. A. Hesse, C. J. Tassone, R. M. Rioux, P. Christopher, S. R. Bare, M. Li, D. N. Zakharov, A. N. Alexandrova, A. R. Head, G. Zhou, and J. C. Yang",
+    "title": "Defect-Driven Redox Interplay on Anatase TiO₂: Surface-Structure Dependent Activation for CO₂ Hydrogenation Catalysis",
+    "doi": "https://doi.org/10.1021/jacs.5c06076",
+    "year": 2025,
+    "status": "published"
+  },
+  {
+    "number": 23,
+    "journal": "ACS Catalysis, 2025, 15, 12576–12589",
+    "authors": "H. Kareem*, Y. Lee*, M. Saqib, D. T. Tran, A. N. Alexandrova, E. D. Wachsman, D. Chu, and D. R. Baker",
+    "title": "Bimetallic-GDC Nanowire Catalyst as a Cathode Surface Modifier for Enhancing the Oxygen Reduction Reaction and Suppressing Cation Segregation in Low-Temperature Solid Oxide Fuel Cells",
+    "doi": "https://doi.org/10.1021/acscatal.5c00756",
+    "year": 2025,
+    "status": "published"
+  },
+  {
+    "number": 22,
+    "journal": "Advanced Materials Interfaces, 2025, 12, 2500207",
+    "authors": "A. Albrecht, S. Y. Song, S.-H. Yoo, C.-G. Lee, M. Krämer, M. Hans, B. Gault, Y. Ma, D. Raabe, S. S. Sohn*, Y. Lee*, and S.-H. Kim*",
+    "title": "An Atomic-Scale View at γ’-Fe₄N as Hydrogen Barrier Material",
+    "doi": "https://doi.org/10.1002/admi.202500207",
+    "year": 2025,
+    "status": "published"
+  },
+  {
+    "number": 21,
+    "journal": "Journal of Materials Chemistry A, 2025, 13, 22527–22538",
+    "authors": "H. J. Kim†, Y. Lee†, H. W. Seoh, T. G. Rhee, Y. G. Khim, S. Choi, Y.-K. Seo, G. Kim, K.-J. Kim, A. Soon, and Y. J. Chang",
+    "title": "Synergetic Oxide-Chalcogenide Heterostructure in Metallic Two-Dimensional VSe₂ for the Hydrogen Evolution Reaction",
+    "doi": "https://doi.org/10.1039/D5TA00991J",
+    "year": 2025,
+    "status": "published"
+  },
+  {
+    "number": 20,
+    "journal": "Angewandte Chemie International Edition, 2025, 64, e202501017",
+    "authors": "Y. Lee, X. Chen, S. Gericke, M. Li, D. Zakharov, A. Head, J. Yang, and A. N. Alexandrova",
+    "title": "Machine-Learning-Driven Exploration of Surface Reconstructions of Reduced Rutile TiO₂",
+    "doi": "https://doi.org/10.1002/anie.202501017",
+    "year": 2025,
+    "status": "published"
+  },
+  {
+    "number": 19,
+    "journal": "Nature Communications, 2025, 16, 2593",
+    "authors": "A. Prajapati, C. Hahn, I. M. Weidinger, Y. Shi, Y. Lee, A. N. Alexandrova, D. Thompson, S. R. Bare, S. Chen, S. Yan, and N. Kornienko",
+    "title": "Best Practices for In-situ and Operando Techniques within Electrocatalytic Systems",
+    "doi": "https://doi.org/10.1038/s41467-025-57563-6",
+    "year": 2025,
+    "status": "published"
+  },
+  {
+    "number": 18,
+    "journal": "Journal of the American Chemical Society, 2025, 147, 7799–7808",
+    "authors": "Y. Lee and T. Lee",
+    "title": "Machine-Learning-Accelerated Surface Exploration of Reconstructed BiVO₄(010) and Characterization of Their Aqueous Interfaces",
+    "doi": "https://doi.org/10.1021/jacs.4c17739",
+    "year": 2025,
+    "status": "published"
+  },
+  {
+    "number": 17,
+    "journal": "Energy & Environmental Science, 2025, 18, 1214–1231",
+    "authors": "M. van der Merwe*, Y. Lee*, R. E. Wibowo, T. Kokumai, A. Efimenko, M. D. Arce, C. E. Jimenez, B. Howchen, R. S. Anzorena, I. Lucentini, C. Escudero, G. Schuck, Z. Kochovski, M. Favaro, D. E. Starr, K. Reuter, C. Scheurer, M. Bär, and R. Garcia-Diez*",
+    "title": "Unravelling the Mechanistic Complexity of the Oxygen Evolution Reaction and Ir Dissolution in Highly Dimensional Amorphous Hydrous Iridium Oxides",
+    "doi": "https://doi.org/10.1039/D4EE02839B",
+    "year": 2025,
+    "status": "published"
+  },
+  {
+    "number": 16,
+    "journal": "ACS Catalysis, 2024, 14, 9018–9033",
+    "authors": "L. Masliuk, K. Nam, M. W. Terban, Y. Lee, P. Kube, D. Delgado, F. Girgsdies, K. Reuter, R. Schlögl, A. Trunschke, C. Scheurer, M. Zobel, and T. Lunkenbein",
+    "title": "Linking Bulk and Surface Structures in Complex Mixed Oxides",
+    "doi": "https://doi.org/10.1021/acscatal.3c05230",
+    "year": 2024,
+    "status": "published"
+  },
+  {
+    "number": 15,
+    "journal": "The Journal of Physical Chemistry C, 2023, 127, 17599–17608",
+    "authors": "Y. Lee, J. Timmermann, C. Panosetti, C. Scheurer, and K. Reuter",
+    "title": "Staged Training of Machine-Learning Potentials from Small to Large Surface Unit Cells: Efficient Global Structure Determination of the RuO₂(100)-c(2×2) Reconstruction and (410) Vicinal",
+    "doi": "https://doi.org/10.1021/acs.jpcc.3c04049",
+    "year": 2023,
+    "status": "published"
+  },
+  {
+    "number": 14,
+    "journal": "ACS Energy Letter, 2023, 8, 3381–3386",
+    "authors": "S.-H. Yoo, L. S. Aota, S. Shin, A. A. El-Zoka, P. W. Kang, Y. Lee, H. Lee, S.-H. Kim, and B. Gault",
+    "title": "Dopant Evolution in Electrocatalysts after Hydrogen Oxidation Reaction in an Alkaline Environment",
+    "doi": "https://doi.org/10.1021/acsenergylett.3c00842",
+    "year": 2023,
+    "status": "published"
+  },
+  {
+    "number": 13,
+    "journal": "The Journal of Chemical Physics, 2023, 158, 224115",
+    "authors": "C. Panosetti, Y. Lee, A. Samtsevych, and C. Scheurer",
+    "title": "Black Box vs. Grey Box: Comparing GAP and GPrep-DFTB for Ruthenium and Ruthenium Oxide",
+    "doi": "https://doi.org/10.1063/5.0141233",
+    "year": 2023,
+    "status": "published"
+  },
+  {
+    "number": 12,
+    "journal": "Applied Surface Science, 2023, 613, 155913",
+    "authors": "N. Kumar, Y. Lee, G. Lee, S. Lee, T. Lee, S.-H. Yoo, C. Stampfl, A. Soon, and W. Jang",
+    "title": "Oxidic Structures on Copper-Gold Alloy Nanofacets",
+    "doi": "https://doi.org/10.1016/j.apsusc.2022.155913",
+    "year": 2023,
+    "status": "published"
+  },
+  {
+    "number": 11,
+    "journal": "ChemSusChem, 2022, 15, e202200015",
+    "authors": "Y. Lee, C. Scheurer, and K. Reuter",
+    "title": "Epitaxial Core-Shell Oxide Nanoparticles: First-Principles Evidence for Increased Activity and Stability of Rutile Catalysts for Acidic Oxygen Evolution",
+    "doi": "https://doi.org/10.1002/cssc.202200015",
+    "year": 2022,
+    "status": "published"
+  },
+  {
+    "number": 10,
+    "journal": "The Journal of Chemical Physics, 2021, 155, 244107",
+    "authors": "J. Timmermann, Y. Lee, C. Staacke, J. Margraf, C. Scheurer, and K. Reuter",
+    "title": "Data-Efficient Iterative Training of Gaussian Approximation Potentials: Application to Surface Structure Determination of Rutile IrO₂ and RuO₂",
+    "doi": "https://doi.org/10.1063/5.0071249",
+    "year": 2021,
+    "status": "published"
+  },
+  {
+    "number": 9,
+    "journal": "Physical Review Letters, 2020, 125, 206101",
+    "authors": "J. Timmermann, F. Kraushofer, N. Resch, P. Li, Y. Wang, Z. Mao, M. Riva, Y. Lee, C. Staacke, M. Schmid, C. Scheurer, G. S. Parkinson, U. Diebold, and K. Reuter",
+    "title": "IrO₂ Surface Complexions Identified through Machine Learning and Surface Investigations",
+    "doi": "https://doi.org/10.1103/PhysRevLett.125.206101",
+    "year": 2020,
+    "status": "published"
+  },
+  {
+    "number": 8,
+    "journal": "Advanced Energy Materials, 2019, 9, 1803795",
+    "authors": "S. Laha, Y. Lee, F. Podjaski, D. Weber, V. Duppel, L. M. Schoop, F. Pielnhofer, C. Scheurer, K. Müller, U. Starke, K. Reuter, and B. V. Lotsch",
+    "title": "Ruthenium Oxide Nanosheets for Enhanced Oxygen Evolution Catalysis in Acidic Medium",
+    "doi": "https://doi.org/10.1002/aenm.201803795",
+    "year": 2019,
+    "status": "published"
+  },
+  {
+    "number": 7,
+    "journal": "The Journal of Physical Chemistry C, 2018, 122, 21644–21650",
+    "authors": "Y. Lee, T. Lee, and A. Soon",
+    "title": "Polytypism in Hexagonal Tungsten Trioxide: Insights from Ab Initio Molecular Dynamics Simulations",
+    "doi": "https://doi.org/10.1021/acs.jpcc.8b05595",
+    "year": 2018,
+    "status": "published"
+  },
+  {
+    "number": 6,
+    "journal": "The Journal of Physical Chemistry C, 2019, 122, 3558–3566",
+    "authors": "W. Jang, J. Yun, T. Lee, Y. Lee, and A. Soon",
+    "title": "Disentangling the Effects of Inter- and Intra-octahedral Distortions on the Electronic Structure in Binary Metal Trioxides",
+    "doi": "https://doi.org/10.1021/acs.jpcc.7b11295",
+    "year": 2019,
+    "status": "published"
+  },
+  {
+    "number": 5,
+    "journal": "Physical Review Applied, 2017, 7, 024025",
+    "authors": "J. Yun, W. Jang, T. Lee, Y. Lee, and A. Soon",
+    "title": "Aligning the Band Structures of Polymorphic Molybdenum Oxides and Organic Emitters in Light-emitting Diodes",
+    "doi": "https://doi.org/10.1103/PhysRevApplied.7.024025",
+    "year": 2017,
+    "status": "published"
+  },
+  {
+    "number": 4,
+    "journal": "The Journal of Physical Chemistry C, 2017, 121, 2228",
+    "authors": "T. Lee, Y. Lee, S. Piccinin, and A. Soon",
+    "title": "Ab Initio Thermodynamics of Surface Oxide Structures under Controlled Growth Conditions",
+    "doi": "https://doi.org/10.1021/acs.jpcc.6b11445",
+    "year": 2017,
+    "status": "published"
+  },
+  {
+    "number": 3,
+    "journal": "Journal of Materials Chemistry A, 2016, 4, 11498",
+    "authors": "T. Lee†, Y. Lee†, W. Jang, and A. Soon",
+    "title": "Understanding the Advantage of Hexagonal WO₃ as an Efficient Photoanode for Solar Water Splitting: A First-Principles Perspective",
+    "doi": "https://doi.org/10.1039/C6TA03659G",
+    "year": 2016,
+    "status": "published"
+  },
+  {
+    "number": 2,
+    "journal": "Chemistry of Materials, 2016, 28, 4528",
+    "authors": "Y. Lee†, T. Lee†, W. Jang, and A. Soon",
+    "title": "Unraveling the Intercalation Chemistry of Hexagonal Tungsten Bronze and its Optical Responses",
+    "doi": "https://doi.org/10.1021/acs.chemmater.5b03980",
+    "year": 2016,
+    "status": "published"
+  },
+  {
+    "number": 1,
+    "journal": "Physical Chemistry Chemical Physics, 2016, 18, 7349",
+    "authors": "T. Lee, Y. Lee, K. Kang, and A. Soon",
+    "title": "In Search of Non-conventional Surface Oxidic Motifs of Cu on Au(111)",
+    "doi": "https://doi.org/10.1039/C5CP07932B",
+    "year": 2016,
+    "status": "published"
+  }
+]

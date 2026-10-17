@@ -1,0 +1,69 @@
+name: Update Scholar and deploy CCML
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '17 0 * * 1' # Monday 09:17 Asia/Seoul; execution may be delayed.
+permissions:
+  contents: read
+concurrency:
+  group: ccml-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+      - name: Check updater and website
+        run: |
+          python3 scripts/test_scholar.py
+          node scripts/test_scholar_ui.js
+          python3 check.py
+      - name: Check Scholar configuration
+        id: scholar-config
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+        run: |
+          if [ -n "$SERPAPI_API_KEY" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Refresh Scholar on weekly or manual runs
+        if: github.event_name != 'push' && steps.scholar-config.outputs.enabled == 'true'
+        env:
+          SERPAPI_API_KEY: ${{ secrets.SERPAPI_API_KEY }}
+        run: python3 scripts/update_scholar.py
+      - name: Save last successful snapshot
+        if: github.event_name != 'push' && steps.scholar-config.outputs.enabled == 'true'
+        run: |
+          git add data/scholar.js
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'Update Google Scholar metrics'
+            git push
+          fi
+      - name: Prepare public files only
+        run: |
+          mkdir _site
+          cp *.html _site/
+          cp -R css js assets data _site/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
