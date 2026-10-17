@@ -21,7 +21,7 @@ class Page(HTMLParser):
         if tag == 'article' and 'data-status' in attrs:
             self.publications[attrs['id']] = (attrs['data-year'], attrs['data-status'])
 pages = {p.name: Page(p.read_text()) for p in ROOT.glob('*.html')}
-assert len(pages) == 7
+assert len(pages) == 8
 for filename, page in pages.items():
     assert page.h1 == 1, filename
     for link in page.links:
@@ -44,7 +44,7 @@ for p in pubs:
     assert p['title'] and p['authors'] and p['journal']
     article = re.search(r'<article class="publication(?: has-toc)?" id="pub-' + str(p['number']) + r'".*?</article>', (ROOT / 'publications.html').read_text()).group()
     assert all(escape(p[key]) in article for key in ('title', 'authors', 'journal', 'doi'))
-print('PASS: 7 pages; local assets, links and anchors; 36 publication records and statuses.')
+print('PASS: 8 pages; local assets, links and anchors; 36 publication records and statuses.')
 
 assert set(pages['index.html'].publications) == {'pub-27', 'pub-20', 'pub-18', 'pub-17'}
 news = (ROOT / 'news.html').read_text()

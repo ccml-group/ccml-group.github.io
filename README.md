@@ -5,7 +5,8 @@
 ## 포함된 페이지
 
 - `index.html`: 연구실 소개, 연구 분야 01–04, 대표 논문, 연구 소식, 모집 안내
-- `people.html`: 교수 소개, 학력·경력, 구성원 영역
+- `people.html`: PI 요약 및 학생 구성원 (과정별 카드)
+- `pi.html`: 교수 상세 소개, 학력·경력
 - `research.html`: 연구 분야별 상세 소개와 직접 제작한 개념도
 - `publications.html`: 공개 목록의 36건, DOI, 제목·저자·학술지 검색, 연도·상태 필터
 - `news.html`: 공개 논문에 근거한 연구 하이라이트와 기존 모집 공지
@@ -42,3 +43,5 @@
 ## Scholar 자동 갱신
 
 홈과 Publications에 Scholar 지표 영역을 추가했습니다. 현재는 공개 Scholar 프로필에서 직접 확인한 초기 지표와 2017–2026년 그래프를 표시합니다. 설정과 필요한 계정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)를 참고하세요.
+
+Team 구성원은 `people.html`의 과정별 `member-grid` 안에 `member-card`를 추가하여 관리합니다. 포닥 합류 시 같은 구조로 Postdoctoral researchers 섹션을 추가할 수 있습니다.
