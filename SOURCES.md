@@ -41,4 +41,9 @@ Google Scholar 프로필의 All 열과 연도별 그래프를 브라우저에서
 
 ## Publication graphical abstracts (2026-10-17)
 
-Papers #18 (JACS, DOI 10.1021/jacs.4c17739) and #27 (ACS Catalysis, DOI 10.1021/acscatal.6c01516): original article preview images from the lab’s public publications page, https://sites.google.com/view/ccml-group/publications. CSS displays the graphical abstract region without modifying the source images. Each image links to its paper. Other papers have no verified TOC asset and remain text-only.
+Papers #18 (JACS, DOI 10.1021/jacs.4c17739) and #27 (ACS Catalysis, DOI 10.1021/acscatal.6c01516): original article preview images from the lab’s public publications page, https://sites.google.com/view/ccml-group/publications. CSS displays the graphical abstract region without modifying the source images. Each image links to its paper. Other papers without a verified TOC asset remain text-only.
+
+## Additional official TOC images (2026-10-17)
+
+- #17: M. van der Merwe et al., Energy & Environmental Science 2025, 18, 1214–1231, https://doi.org/10.1039/D4EE02839B. Visual Abstract downloaded through the official RSC figure viewer, https://pubs.rsc.org/view-large/figure/35561672/d4ee02839b-ga.tif. The current article page specifies CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Unmodified image; attribution displayed below thumbnail.
+- #20: Y. Lee et al., Angewandte Chemie International Edition 2025, 64, e202501017, https://doi.org/10.1002/anie.202501017. Official Graphical Abstract downloaded from the Wiley abstract page via its image link (anie202501017-gra-0001-m.jpg). Unmodified image used for the author’s publication listing.

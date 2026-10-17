@@ -38,3 +38,5 @@
 .toc-18{aspect-ratio:520/208}.toc-18 img{width:246.154%;left:-136.538%;top:-259.615%}
 .toc-27{aspect-ratio:314/174}.toc-27 img{width:245.86%;left:-136.306%;top:-201.149%}
 @media(max-width:800px){.publication.has-toc{grid-template-columns:27px minmax(0,1fr)}.publication-toc{grid-column:2;width:min(100%,300px)}}
+
+.publication-toc.toc-full{padding:8px}.publication-toc.toc-full img{position:static;display:block;width:100%;height:auto}.toc-credit{display:block;font-size:9px;color:var(--muted);margin-top:8px;line-height:1.5}@media(max-width:800px){.publication.has-toc>div:last-child:not(:nth-child(2)){grid-column:2;width:min(100%,300px)}.publication-toc.toc-full{width:100%}}

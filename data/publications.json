@@ -155,7 +155,12 @@
     "title": "Machine-Learning-Driven Exploration of Surface Reconstructions of Reduced Rutile TiO₂",
     "doi": "https://doi.org/10.1002/anie.202501017",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-20.png",
+      "alt": "Graphical abstract of machine-learning exploration of rutile TiO₂ reconstructions with simulated and experimental microscopy",
+      "source": "https://onlinelibrary.wiley.com/doi/abs/10.1002/anie.202501017"
+    }
   },
   {
     "number": 19,
@@ -187,7 +192,12 @@
     "title": "Unravelling the Mechanistic Complexity of the Oxygen Evolution Reaction and Ir Dissolution in Highly Dimensional Amorphous Hydrous Iridium Oxides",
     "doi": "https://doi.org/10.1039/D4EE02839B",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "toc": {
+      "image": "assets/toc/publication-17.png",
+      "alt": "Graphical abstract of operando X-ray spectroscopy and DFT describing active sites and Ir vacancies in hydrous iridium oxide",
+      "source": "https://doi.org/10.1039/D4EE02839B"
+    }
   },
   {
     "number": 16,
