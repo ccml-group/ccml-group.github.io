@@ -1,6 +1,6 @@
 window.CCML_SCHOLAR = {
   "author_id": "iqaMS78AAAAJ",
-  "updated_at": "2026-10-17T00:17:39+00:00",
+  "updated_at": "2026-10-17T00:55:12+00:00",
   "citations": 1122,
   "h_index": 15,
   "i10_index": 17,
@@ -45,7 +45,5 @@ window.CCML_SCHOLAR = {
       "year": 2026,
       "citations": 376
     }
-  ],
-  "source_url": "https://scholar.google.com/citations?user=iqaMS78AAAAJ&hl=en",
-  "collection_method": "Verified from the Google Scholar profile in the browser"
+  ]
 };
