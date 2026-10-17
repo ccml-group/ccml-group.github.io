@@ -33,8 +33,8 @@
 
 /* Display only the graphical-abstract area of the original article preview. */
 .publication.has-toc{grid-template-columns:45px minmax(0,1fr) 240px;align-items:start}
-.publication-toc{position:relative;display:block;overflow:hidden;background:white;border:1px solid var(--line);border-radius:6px;margin-top:6px}
+.publication-toc{position:relative;display:block;overflow:hidden;background:white;outline:1px solid var(--line);border-radius:6px;margin-top:6px}
 .publication-toc img{position:absolute;max-width:none;height:auto}
-.toc-18{aspect-ratio:500/192}.toc-18 img{width:256%;left:-144%;top:-285.417%}
-.toc-27{aspect-ratio:304/164}.toc-27 img{width:253.947%;left:-142.434%;top:-216.463%}
+.toc-18{aspect-ratio:520/208}.toc-18 img{width:246.154%;left:-136.538%;top:-259.615%}
+.toc-27{aspect-ratio:314/174}.toc-27 img{width:245.86%;left:-136.306%;top:-201.149%}
 @media(max-width:800px){.publication.has-toc{grid-template-columns:27px minmax(0,1fr)}.publication-toc{grid-column:2;width:min(100%,300px)}}
