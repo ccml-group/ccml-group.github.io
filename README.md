@@ -18,7 +18,7 @@
 
 문구는 각 HTML에서, 색상·여백은 CSS에서 변경합니다. 메뉴와 푸터는 각 HTML에 들어 있으므로 공통 내용을 바꿀 때 7개 파일에 함께 반영합니다. JavaScript를 꺼도 모든 본문, 논문 목록, 메뉴 링크를 읽을 수 있습니다.
 
-학교 웹서버에는 HTML과 css/js/assets/data 폴더를 업로드합니다. Google Scholar 자동 갱신 및 GitHub Pages 배포 설정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)를 따릅니다. Pages의 배포 소스는 GitHub Actions로 선택합니다. 실제 온라인 배포는 수행하지 않았습니다.
+학교 웹서버에는 HTML과 css/js/assets/data 폴더를 업로드합니다. Google Scholar 자동 갱신 및 GitHub Pages 배포 설정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)를 따릅니다. Pages의 배포 소스는 GitHub Actions로 선택합니다. 공개 주소는 https://ccml-group.github.io/ 이며 저장소는 https://github.com/ccml-group/ccml-group.github.io 입니다. 이 폴더는 해당 저장소의 로컬 Git 작업 폴더입니다. 수정 후 검증하고 main에 커밋·푸시하면 자동 배포됩니다.
 
 로컬 서버로 확인하려면 이 폴더에서 `python3 -m http.server 8000`을 실행한 뒤 http://localhost:8000 을 엽니다.
 
