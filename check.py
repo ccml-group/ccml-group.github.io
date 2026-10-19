@@ -43,7 +43,9 @@ for p in pubs:
     assert pages['publications.html'].publications[f"pub-{p['number']}"] == (str(p['year']), p['status'])
     assert p['title'] and p['authors'] and p['journal']
     article = re.search(r'<article class="publication(?: has-toc)?" id="pub-' + str(p['number']) + r'".*?</article>', (ROOT / 'publications.html').read_text()).group()
-    assert all(escape(p[key]) in article for key in ('title', 'authors', 'journal', 'doi'))
+    assert all(escape(p[key]) in article for key in ('title', 'journal', 'doi'))
+    authors = re.search(r'<p class="authors">(.*?)</p>', article)[1]
+    assert re.sub(r'<[^>]+>', '', authors) == escape(p['authors'])
 print('PASS: 8 pages; local assets, links and anchors; 36 publication records and statuses.')
 
 assert set(pages['index.html'].publications) == {'pub-27', 'pub-20', 'pub-18', 'pub-17'}
@@ -65,3 +67,8 @@ assert page.count('<figure class="publication-toc">') == 30
 assert not re.search(r'<a[^>]*class="publication-toc', page)
 for figure in re.findall(r'<figure class="publication-toc">.*?</figure>', page):
     assert '<a ' not in figure
+
+expected_lead = {2, 3, 7, 11, 15, 17, 18, 20, 21, 22, 23, 26, 27, 28, 29, 31, 32, 33, 34}
+for article in re.findall(r'<article class="publication(?: has-toc)?".*?</article>', page):
+    number = int(re.search(r'id="pub-(\d+)"', article)[1])
+    assert ('class="lead-author"' in article) == (number in expected_lead)
