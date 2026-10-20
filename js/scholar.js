@@ -1,15 +1,16 @@
 'use strict';
+const scholarKorean = document.documentElement.lang === 'ko';
 const scholar = window.CCML_SCHOLAR;
 if (scholar && scholar.author_id === 'iqaMS78AAAAJ'
     && ['citations', 'h_index', 'i10_index'].every(key => Number.isSafeInteger(scholar[key]) && scholar[key] >= 0)
     && !Number.isNaN(Date.parse(scholar.updated_at))) {
   document.querySelectorAll('[data-scholar-metric]').forEach(node => {
-    node.textContent = scholar[node.dataset.scholarMetric].toLocaleString('en-US');
+    node.textContent = scholar[node.dataset.scholarMetric].toLocaleString(scholarKorean ? 'ko-KR' : 'en-US');
   });
   document.querySelectorAll('[data-scholar-date]').forEach(node => {
     const date = new Date(scholar.updated_at);
-    node.textContent = `Google Scholar · All-time · Updated ${date.toISOString().slice(0, 10)}`;
-    if (Date.now() - date.getTime() > 21 * 86400000) node.textContent += ' · Update delayed';
+    node.textContent = `Google Scholar · ${scholarKorean ? '전체 기간 · 갱신' : 'All-time · Updated'} ${date.toISOString().slice(0, 10)}`;
+    if (Date.now() - date.getTime() > 21 * 86400000) node.textContent += scholarKorean ? ' · 갱신 지연' : ' · Update delayed';
   });
   document.querySelectorAll('[data-scholar-values]').forEach(node => { node.hidden = false; });
   document.querySelectorAll('[data-scholar-pending]').forEach(node => { node.hidden = true; });
@@ -26,7 +27,7 @@ if (scholar && scholar.author_id === 'iqaMS78AAAAJ'
       bar.style.height = `${row.citations / max * 85}%`;
       bar.setAttribute('aria-hidden', 'true');
       const count = document.createElement('strong');
-      count.textContent = row.citations.toLocaleString('en-US');
+      count.textContent = row.citations.toLocaleString(scholarKorean ? 'ko-KR' : 'en-US');
       const track = document.createElement('div');
       track.className = 'citation-track';
       track.append(count, bar);

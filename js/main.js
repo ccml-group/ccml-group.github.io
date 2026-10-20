@@ -1,10 +1,16 @@
 'use strict';
+const korean = document.documentElement.lang === 'ko';
+document.querySelectorAll('[data-language-switch]').forEach(link => {
+  link.addEventListener('click', () => { link.hash = window.location.hash; });
+});
 const menuButton = document.querySelector('.menu-button');
 const navigation = document.querySelector('#navigation');
 menuButton.hidden = false;
 function setMenu(open) {
   menuButton.setAttribute('aria-expanded', String(open));
-  menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+  menuButton.setAttribute('aria-label', korean
+    ? (open ? '메뉴 닫기' : '메뉴 열기')
+    : (open ? 'Close navigation' : 'Open navigation'));
   navigation.classList.toggle('is-collapsed', !open);
 }
 setMenu(false);
@@ -32,7 +38,7 @@ if (filters) {
       publication.hidden = !matches;
       if (matches) count += 1;
     });
-    document.querySelector('#result-count').textContent = `${count} ${count === 1 ? 'work' : 'works'}`;
+    document.querySelector('#result-count').textContent = korean ? `${count}건` : `${count} ${count === 1 ? 'work' : 'works'}`;
     document.querySelector('#no-results').hidden = count !== 0;
   }
   filters.addEventListener('submit', event => event.preventDefault());

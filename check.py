@@ -20,15 +20,16 @@ class Page(HTMLParser):
         if tag == 'img': assert 'alt' in attrs, 'Missing image alt'
         if tag == 'article' and 'data-status' in attrs:
             self.publications[attrs['id']] = (attrs['data-year'], attrs['data-status'])
-pages = {p.name: Page(p.read_text()) for p in ROOT.glob('*.html')}
-assert len(pages) == 8
+pages = {str(p.relative_to(ROOT)): Page(p.read_text()) for p in [*ROOT.glob('*.html'), *(ROOT / 'ko').glob('*.html')]}
+assert len(pages) == 16
 for filename, page in pages.items():
     assert page.h1 == 1, filename
     for link in page.links:
         url = urlsplit(link)
         if url.scheme or url.netloc: continue
-        target = unquote(url.path) or filename
-        assert (ROOT / target).is_file(), (filename, link)
+        path = ((ROOT / filename).parent / unquote(url.path)).resolve() if url.path else ROOT / filename
+        assert path.is_file(), (filename, link)
+        target = str(path.relative_to(ROOT))
         if url.fragment and target in pages:
             assert unquote(url.fragment) in pages[target].ids, (filename, link)
 pubs = json.loads((ROOT / 'data/publications.json').read_text())
@@ -46,7 +47,7 @@ for p in pubs:
     assert all(escape(p[key]) in article for key in ('title', 'journal', 'doi'))
     authors = re.search(r'<p class="authors">(.*?)</p>', article)[1]
     assert re.sub(r'<[^>]+>', '', authors) == escape(p['authors'])
-print('PASS: 8 pages; local assets, links and anchors; 36 publication records and statuses.')
+print('PASS: 16 pages; local assets, links and anchors; 36 publication records and statuses.')
 
 assert set(pages['index.html'].publications) == {'pub-27', 'pub-20', 'pub-18', 'pub-17'}
 news = (ROOT / 'news.html').read_text()
@@ -72,3 +73,29 @@ expected_lead = {2, 3, 7, 11, 15, 17, 18, 20, 21, 22, 23, 26, 27, 28, 29, 31, 32
 for article in re.findall(r'<article class="publication(?: has-toc)?".*?</article>', page):
     number = int(re.search(r'id="pub-(\d+)"', article)[1])
     assert ('class="lead-author"' in article) == (number in expected_lead)
+
+for filename in pages:
+    text = (ROOT / filename).read_text()
+    ko = filename.startswith('ko/')
+    assert f'<html lang="{"ko" if ko else "en"}">' in text
+    counterpart = '../' + Path(filename).name if ko else 'ko/' + filename
+    assert re.search(r'<a href="' + re.escape(counterpart) + r'"[^>]*data-language-switch', text), filename
+    assert 'E243' in text and 'E244' in text and 'B211' in text
+    assert ('교수 사무실' if ko else 'PI office') in text
+    assert ('연구실' if ko else 'Laboratory') in text
+ko_page = (ROOT / 'ko/publications.html').read_text()
+assert pages['ko/publications.html'].publications == pages['publications.html'].publications
+assert set(pages['ko/index.html'].publications) == set(pages['index.html'].publications)
+for pub in pubs:
+    article = re.search(r'<article class="publication(?: has-toc)?" id="pub-' + str(pub['number']) + r'".*?</article>', ko_page)[0]
+    assert all(escape(pub[key]) in article for key in ('title', 'journal', 'doi'))
+    authors = re.search(r'<p class="authors"[^>]*>(.*?)</p>', article)[1]
+    assert re.sub(r'<[^>]+>', '', authors) == escape(pub['authors'])
+    assert ('class="lead-author"' in article) == (pub['number'] in expected_lead)
+assert ko_page.count('<figure class="publication-toc">') == 30
+assert 'Title, author or journal' not in ko_page and 'Underlined' not in ko_page
+assert '경험이 없어도' in (ROOT / 'ko/join.html').read_text()
+assert '약 6개월의 참여를 권장' in (ROOT / 'ko/join.html').read_text()
+assert 'experience is not required' in (ROOT / 'join.html').read_text()
+assert 'recommend around six months' in (ROOT / 'join.html').read_text()
+print('PASS: reciprocal language links, bilingual addresses and recruitment; publication metadata and authorship preserved.')

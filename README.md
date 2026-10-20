@@ -1,47 +1,39 @@
 # CCML 정적 홈페이지
 
-`index.html`을 더블클릭하면 열립니다. 별도 설치, 빌드, 서버, 외부 폰트가 필요하지 않습니다. 논문 검색과 모바일 메뉴도 로컬 파일에서 동작합니다.
+공식 사이트: https://ccml-group.github.io/
 
-## 포함된 페이지
+영어 페이지는 루트에, 한국어 페이지는 `ko/`에 있습니다. 각 언어에는 소개, 구성원, 교수 소개, 연구 분야, 논문, 소식, 연구 참여, 연락처의 8개 페이지가 있습니다. 상단 한국어 / English 링크는 같은 페이지와 연구 항목으로 연결됩니다.
 
-- `index.html`: 연구실 소개, 연구 분야 01–04, 대표 논문, 연구 소식, 모집 안내
-- `people.html`: PI 요약 및 학생 구성원 (과정별 카드)
-- `pi.html`: 교수 상세 소개, 학력·경력
-- `research.html`: 연구 분야별 상세 소개와 논문 원본 패널을 편집한 과학 그림 4장. 출처·편집 내역은 [RESEARCH-FIGURES.md](RESEARCH-FIGURES.md)에 기록했습니다.
-- `publications.html`: 공개 목록의 36건, DOI, 제목·저자·학술지 검색, 연도·상태 필터
-- `news.html`: 공개 논문에 근거한 연구 하이라이트와 기존 모집 공지
-- `join.html`: 연구 참여 안내
-- `contact.html`: 이메일, 전화, 주소, 캠퍼스 지도 링크
-- `css/style.css`, `js/main.js`, `assets/`: 공통 스타일·동작·로컬 이미지
-- `data/publications.json`: 논문 메타데이터 보관용 사본. 웹페이지가 실시간으로 읽는 데이터가 아니므로 수정 시 publications.html도 함께 변경해야 합니다.
+## 콘텐츠 수정
 
-## 수정과 배포
+- 문구와 메뉴·푸터는 각 HTML에서 변경합니다. 공통 내용은 한국어·영어 페이지에 함께 반영합니다.
+- 공통 디자인은 `css/style.css`, 메뉴·언어 전환·논문 검색은 `js/main.js`에 있습니다.
+- 논문 메타데이터 사본은 `data/publications.json`입니다. 논문 수정 시 이 파일과 두 언어의 `publications.html`, 필요한 경우 두 홈의 대표 논문도 함께 수정합니다.
+- 인용 통계는 `data/scholar.js`에서 읽고, `js/scholar.js`가 언어별로 표시합니다. 주간 자동 갱신 설정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)에 있습니다.
+- 연구 그림과 편집 내역은 [RESEARCH-FIGURES.md](RESEARCH-FIGURES.md), 논문 대표 그림은 [TOC-SOURCES.md](TOC-SOURCES.md)에 기록했습니다.
 
-문구는 각 HTML에서, 색상·여백은 CSS에서 변경합니다. 메뉴와 푸터는 각 HTML에 들어 있으므로 공통 내용을 바꿀 때 7개 파일에 함께 반영합니다. JavaScript를 꺼도 모든 본문, 논문 목록, 메뉴 링크를 읽을 수 있습니다.
+## 연구 참여 및 위치
 
-학교 웹서버에는 HTML과 css/js/assets/data 폴더를 업로드합니다. Google Scholar 자동 갱신 및 GitHub Pages 배포 설정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)를 따릅니다. Pages의 배포 소스는 GitHub Actions로 선택합니다. 공개 주소는 https://ccml-group.github.io/ 이며 저장소는 https://github.com/ccml-group/ccml-group.github.io 입니다. 이 폴더는 해당 저장소의 로컬 Git 작업 폴더입니다. 수정 후 검증하고 main에 커밋·푸시하면 자동 배포됩니다.
+- 코딩·계산화학 경험은 필수가 아니며 대학원 진학에 관심 있는 학생을 환영합니다.
+- 학부연구생은 약 6개월 참여를 권장하고, 구체적인 일정은 개별 상담으로 정합니다.
+- 연구실: 원흥관 E243·E244호 / Wonheung Hall E243, E244
+- 교수 사무실: 만해관 B211호 / Manhae Hall B211
+- 대표 이메일: yhyuk@dgu.ac.kr
 
-로컬 서버로 확인하려면 이 폴더에서 `python3 -m http.server 8000`을 실행한 뒤 http://localhost:8000 을 엽니다.
+## 검증과 배포
 
-## 콘텐츠 확인 사항
+```sh
+python3 check.py
+python3 scripts/test_scholar.py
+node scripts/test_scholar_ui.js
+```
 
-2026-09-23에 공개된 CCML 페이지를 기준으로 작성했습니다. 출처와 편집 방침은 SOURCES.md에 기록했습니다.
+내부 링크·앵커·이미지, 언어 전환 링크, 논문 36건의 메타데이터·상태·주저자 표시와 인용 통계 표시를 검증합니다. 논문 상태는 기존 공개 목록 기준이며 이번 번역 작업에서 새로 조사하지 않았습니다.
 
-- 공개 Members 페이지에 명단이 없어 학생 이름·사진·인원을 만들지 않았습니다. 교수 프로필과 향후 명단을 넣을 영역이 있습니다.
-- 별도 뉴스 목록은 확인되지 않아 논문을 요약한 연구 하이라이트를 작성했습니다. 논문 연도만 사용하고 발표 월일이나 수상 소식은 만들지 않았습니다.
-- 36건은 출판된 논문 수가 아니라 공개 목록에 있는 전체 연구 기록 수입니다. 2026-10-17 기준 Published 30건, Accepted 2건, Submitted 4건으로 구성됩니다.
-- 논문 상태와 서지 정보는 원 사이트 기준입니다. 개별 출판사 페이지를 모두 재검증한 목록은 아닙니다. 원 목록의 6번 논문은 2019년으로 표기되어 있어 그대로 유지했습니다.
-- 교수 페이지의 yhyuk@dgu.ac.kr을 대표 연락처로 사용하고, 홈페이지 모집 공지의 yhyuk@dongguk.edu도 함께 안내했습니다.
-- NREL의 정보 구조, 색조, 타이포그래피 위계와 여백을 참고해 독립적으로 구현했습니다. NREL 코드·로고·이미지·연구실 소개 문구를 복사하지 않았습니다.
+`main`에 푸시하면 GitHub Actions가 검증 후 HTML과 `css/js/assets/data/ko`를 GitHub Pages에 배포합니다. 매주 자동 인용 통계 갱신도 같은 배포 과정을 사용합니다.
 
-## 검증
+로컬 미리보기는 이 폴더에서 다음 명령을 실행한 후 http://127.0.0.1:8765/ko/index.html 을 엽니다.
 
-`python3 check.py`: 7개 페이지의 내부 링크, 파일, 앵커, 이미지 대체 텍스트와 논문 36건의 상태 일치를 확인합니다.
-
-초기 제작 당시 브라우저에서 데스크톱과 390px 모바일 레이아웃, 모바일 메뉴, 논문 검색(BiVO → 2건), 연도 결합 필터(2026 → 1건), 일치 결과 없음, Submitted 필터(2건)를 점검했습니다.
-
-## Scholar 자동 갱신
-
-홈과 Publications에 Scholar 지표 영역을 추가했습니다. 현재는 공개 Scholar 프로필에서 직접 확인한 초기 지표와 2017–2026년 그래프를 표시합니다. 설정과 필요한 계정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)를 참고하세요.
-
-Team 구성원은 `people.html`의 과정별 `member-grid` 안에 `member-card`를 추가하여 관리합니다. 포닥 합류 시 같은 구조로 Postdoctoral researchers 섹션을 추가할 수 있습니다.
+```sh
+python3 -m http.server 8765 --bind 127.0.0.1
+```
