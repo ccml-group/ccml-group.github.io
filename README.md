@@ -7,7 +7,7 @@
 - `index.html`: 연구실 소개, 연구 분야 01–04, 대표 논문, 연구 소식, 모집 안내
 - `people.html`: PI 요약 및 학생 구성원 (과정별 카드)
 - `pi.html`: 교수 상세 소개, 학력·경력
-- `research.html`: 연구 분야별 상세 소개와 직접 제작한 개념도
+- `research.html`: 연구 분야별 상세 소개와 논문 원본 패널을 편집한 과학 그림 4장. 출처·편집 내역은 [RESEARCH-FIGURES.md](RESEARCH-FIGURES.md)에 기록했습니다.
 - `publications.html`: 공개 목록의 36건, DOI, 제목·저자·학술지 검색, 연도·상태 필터
 - `news.html`: 공개 논문에 근거한 연구 하이라이트와 기존 모집 공지
 - `join.html`: 연구 참여 안내

@@ -9,7 +9,7 @@
 .scholar-panel{margin:28px 0 34px}.scholar-panel .eyebrow{margin-bottom:16px}.scholar-values{display:flex;gap:42px;margin-bottom:12px}.scholar-values strong{display:block;font-size:32px;line-height:1.25}.scholar-values span{font:11px/2 ui-monospace,monospace;color:var(--muted)}.scholar-panel .caption{margin:8px 0;font-size:12px}.hero .scholar-values span,.hero .scholar-panel .caption{color:#bbc1cd}.hero .scholar-panel .text-link{color:#d6bb82}@media(max-width:600px){.scholar-values{gap:28px}.scholar-values strong{font-size:27px}}
 .citation-chart{margin:35px 0 50px;padding:36px 40px 24px;background:linear-gradient(125deg,#202e3a,#16252e);border:1px solid #30434b;border-radius:16px;color:#f6f4ef;box-shadow:0 14px 35px #18283012}.citation-chart .eyebrow{color:#a7c8be;font-size:10px;margin-bottom:10px}.citation-chart h2{font-size:28px;margin-bottom:8px;letter-spacing:-.03em}.citation-chart .caption{color:#acbbc0}.citation-scroll{overflow-x:auto;padding:12px 0 4px;scrollbar-color:#537c77 #22353e}.citation-chart ol{list-style:none;padding:0;margin:0;display:flex;gap:18px;min-width:540px}.citation-chart li{flex:1;min-width:0;display:flex;flex-direction:column;gap:14px;text-align:center;font:11px/1.5 ui-monospace,monospace;color:#a9b8be}.citation-track{height:225px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;border-bottom:1px solid #73899155;background:repeating-linear-gradient(to top,transparent 0,transparent calc(25% - 1px),#73899118 calc(25% - 1px),#73899118 25%)}.citation-bar{display:block;flex-shrink:0;width:72%;max-width:48px;background:linear-gradient(to top,#3f7777,#90bcb0);border:1px solid #a6cbb329;border-radius:5px 5px 0 0;transition:filter .2s,box-shadow .2s}.citation-chart strong{font-size:12px;font-weight:500;color:#d6e3df;margin-bottom:8px}.citation-chart li:last-child .citation-bar{background:linear-gradient(to top,#59918a,#c1dfc8);box-shadow:0 0 24px #9bceb51a}.citation-chart li:hover .citation-bar{filter:brightness(1.2);box-shadow:0 0 20px #9bceb526}.chart-footnote{font-size:11px;color:#a9b8be;margin:22px 0 0;padding-top:16px;border-top:1px solid #73899130}@media(max-width:600px){.citation-chart{padding:26px 20px 20px;border-radius:12px}.citation-chart h2{font-size:25px}.citation-chart ol{gap:12px}.citation-track{height:190px}}
 
-/* Research artwork: preserve the supplied square compositions. */
+/* Scientific composites: preserve source-panel proportions. */
 .visual-research-card{padding:0;overflow:hidden;background:var(--paper);border-radius:4px}
 .visual-research-card>img{display:block;width:100%;height:auto;aspect-ratio:1;object-fit:contain}
 .research-card-copy{position:relative;padding:28px 48px 30px 28px}
@@ -17,7 +17,7 @@
 .visual-research-card h3{max-width:none}
 .visual-research-card .research-korean{margin:10px 0;color:var(--ink);font-size:14px}
 .research-feature{position:relative;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:64px;border-bottom:1px solid var(--line);scroll-margin-top:90px}
-.research-art{margin:0}
+.research-art{margin:0}.research-art>a{display:block}.research-art figcaption{margin-top:12px}.research-art figcaption .text-link{font-size:12px}
 .research-art img{display:block;width:100%;height:auto;border-radius:4px}
 .research-feature:nth-of-type(odd) .research-art{order:2}
 .research-feature-copy .number{display:block;color:var(--accent);margin-bottom:24px;letter-spacing:.12em}
