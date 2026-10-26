@@ -42,8 +42,7 @@ assert sum(p['status'] == 'preparation' for p in pubs) == 0
 assert sum(bool(p['doi']) for p in pubs) == 30
 def check_journal(article, pub):
     journal = re.search(r'<p class="journal"[^>]*>(.*?)</p>', article)[1]
-    parts = re.findall(r'<(?:strong|span) class="journal-(?:name|details)">(.*?)</(?:strong|span)>', journal)
-    assert len(parts) == 2 and ', '.join(parts) == escape(pub['journal']), pub['number']
+    assert journal == escape(pub['journal']), pub['number']
 
 for p in pubs:
     assert pages['publications.html'].publications[f"pub-{p['number']}"] == (str(p['year']), p['status'])
@@ -107,13 +106,13 @@ assert 'experience is not required' in (ROOT / 'join.html').read_text()
 assert 'recommend around six months' in (ROOT / 'join.html').read_text()
 print('PASS: reciprocal language links, bilingual addresses and recruitment; publication metadata and authorship preserved.')
 
-rank = {'accepted': 0, 'published': 1, 'submitted': 2, 'preparation': 3}
+rank = {'submitted': 0, 'accepted': 1, 'published': 2, 'preparation': 3}
 expected_order = [f"pub-{p['number']}" for p in pubs]
 assert [rank[p['status']] for p in pubs] == sorted(rank[p['status']] for p in pubs)
-assert expected_order[0] == 'pub-34'
+assert expected_order[0] == 'pub-36'
 assert next(p for p in pubs if p['number'] == 34)['journal'] == 'Advanced Energy Materials, 2026, Accepted'
 for name in ['publications.html', 'ko/publications.html']:
     assert list(pages[name].publications) == expected_order, name
 assert '30 published articles, 3 accepted and 3 submitted manuscripts' in page
 assert '게재 논문 30건 · 게재 확정 3건 · 투고 중 3건' in ko_page
-print('PASS: AEM acceptance, journal details and accepted/published/submitted order in both languages.')
+print('PASS: AEM acceptance, journal details and submitted/accepted/published order in both languages.')

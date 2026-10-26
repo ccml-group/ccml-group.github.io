@@ -1,5 +1,35 @@
 [
   {
+    "number": 36,
+    "journal": "Manuscript, 2026, Submitted",
+    "authors": "K. Nam, Y. Song, Y. Lee, L. Masliuk, A. Trunschke, T. Lunkenbein, K. Reuter, and C. Scheurer",
+    "title": "Accurate Modelling of Complex Mixed-Metal Oxide Surfaces at the Atomic Scale",
+    "doi": "",
+    "year": 2026,
+    "status": "submitted",
+    "toc_status": "awaiting-publication"
+  },
+  {
+    "number": 35,
+    "journal": "Manuscript, 2026, Submitted",
+    "authors": "H. Lee, K. Lee, H.-S. Kim, Y. Lee, Y.-K. Lee, T. Purcell, T. Lee, and K. Heo",
+    "title": "Strain Engineering for Deviating from the Schottky-Mott Limit in MoS₂/Metal Heterojunction",
+    "doi": "",
+    "year": 2026,
+    "status": "submitted",
+    "toc_status": "awaiting-publication"
+  },
+  {
+    "number": 33,
+    "journal": "Manuscript, 2026, Submitted",
+    "authors": "M. van der Merwe†, Y. Lee†, L. Lahn, A. Steigert, E. P. Wibowo, T.-E. Hsieh, J. Frisch, M. Gorgoi, A. Efimenko, T. Henschel, R. G. Wilks, A. N. Alexandrova, O. Kasian, M. Bär, and R. Garcia-Diez",
+    "title": "Activity-Enhancement of TiO₂-Supported Ir-Based OER Electrocatalysts by Controlled Design of the Ir|Ti Interface",
+    "doi": "",
+    "year": 2026,
+    "status": "submitted",
+    "toc_status": "awaiting-publication"
+  },
+  {
     "number": 34,
     "journal": "Advanced Energy Materials, 2026, Accepted",
     "authors": "H. Na, K. Nam, Y. Lee*, and S.-K. Kim*",
@@ -508,35 +538,5 @@
       "kind": "graphical-abstract"
     },
     "toc_status": "available"
-  },
-  {
-    "number": 36,
-    "journal": "Manuscript, 2026, Submitted",
-    "authors": "K. Nam, Y. Song, Y. Lee, L. Masliuk, A. Trunschke, T. Lunkenbein, K. Reuter, and C. Scheurer",
-    "title": "Accurate Modelling of Complex Mixed-Metal Oxide Surfaces at the Atomic Scale",
-    "doi": "",
-    "year": 2026,
-    "status": "submitted",
-    "toc_status": "awaiting-publication"
-  },
-  {
-    "number": 35,
-    "journal": "Manuscript, 2026, Submitted",
-    "authors": "H. Lee, K. Lee, H.-S. Kim, Y. Lee, Y.-K. Lee, T. Purcell, T. Lee, and K. Heo",
-    "title": "Strain Engineering for Deviating from the Schottky-Mott Limit in MoS₂/Metal Heterojunction",
-    "doi": "",
-    "year": 2026,
-    "status": "submitted",
-    "toc_status": "awaiting-publication"
-  },
-  {
-    "number": 33,
-    "journal": "Manuscript, 2026, Submitted",
-    "authors": "M. van der Merwe†, Y. Lee†, L. Lahn, A. Steigert, E. P. Wibowo, T.-E. Hsieh, J. Frisch, M. Gorgoi, A. Efimenko, T. Henschel, R. G. Wilks, A. N. Alexandrova, O. Kasian, M. Bär, and R. Garcia-Diez",
-    "title": "Activity-Enhancement of TiO₂-Supported Ir-Based OER Electrocatalysts by Controlled Design of the Ir|Ti Interface",
-    "doi": "",
-    "year": 2026,
-    "status": "submitted",
-    "toc_status": "awaiting-publication"
   }
 ]

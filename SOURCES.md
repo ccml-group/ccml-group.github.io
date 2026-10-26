@@ -53,4 +53,4 @@ Papers #18 (JACS, DOI 10.1021/jacs.4c17739) and #27 (ACS Catalysis, DOI 10.1021/
 The earlier two first-page preview assets have been replaced by standalone official graphical abstracts. See TOC-SOURCES.md for the current complete coverage and source list. All 30 current graphics are stored locally and have no outbound image link.
 
 ## Publication status — 2026-10-26
-저자 확인에 따라 34번 Zwitterionic Thermoplastic Polyurethane-Based Quasi-Solid Polymer Electrolytes for Lithium Metal Batteries with Machine-Learning-Assisted Mechanistic Insights를 Advanced Energy Materials 게재 확정(Accepted)으로 변경했습니다. DOI·권·페이지는 확인되지 않아 추가하지 않았습니다. 기존 번호와 앵커는 유지하며, 게재 확정·출판 논문을 투고 중 원고보다 먼저 표시합니다. 전체 36건은 게재 완료 30건, 게재 확정 3건, 투고 중 3건입니다.
+저자 확인에 따라 34번 Zwitterionic Thermoplastic Polyurethane-Based Quasi-Solid Polymer Electrolytes for Lithium Metal Batteries with Machine-Learning-Assisted Mechanistic Insights를 Advanced Energy Materials 게재 확정(Accepted)으로 변경했습니다. DOI·권·페이지는 확인되지 않아 추가하지 않았습니다. 기존 번호와 앵커는 유지하며, 투고 중 원고 → 게재 확정 → 출판 논문 순으로 표시합니다. 전체 36건은 게재 완료 30건, 게재 확정 3건, 투고 중 3건입니다.
