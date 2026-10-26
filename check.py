@@ -42,7 +42,9 @@ assert sum(p['status'] == 'preparation' for p in pubs) == 0
 assert sum(bool(p['doi']) for p in pubs) == 30
 def check_journal(article, pub):
     journal = re.search(r'<p class="journal"[^>]*>(.*?)</p>', article)[1]
-    assert journal == escape(pub['journal']), pub['number']
+    assert re.sub(r'<[^>]+>', '', journal) == escape(pub['journal']), pub['number']
+    expected = [escape(pub['journal'].split(', ', 1)[0])] if pub['status'] in {'accepted', 'published'} else []
+    assert re.findall(r'<em>(.*?)</em>', journal) == expected, pub['number']
 
 for p in pubs:
     assert pages['publications.html'].publications[f"pub-{p['number']}"] == (str(p['year']), p['status'])
