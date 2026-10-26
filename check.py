@@ -187,3 +187,12 @@ for filename in ['publications.html', 'ko/publications.html']:
         assert 'class="caption publication-year-summary"' in group
     assert sum(year_counts.values()) == 37
 print('PASS: descending annual sections, accurate counts, stable publication IDs and corrected 2018 metadata.')
+
+for filename in ['publications.html', 'ko/publications.html']:
+    text = (ROOT / filename).read_text()
+    main = re.search(r'<main\b.*?</main>', text)[0]
+    assert main.count('href="https://scholar.google.com/citations?user=iqaMS78AAAAJ&amp;hl=en"') == 1
+    panel = re.search(r'<section class="scholar-panel scholar-panel--publications".*?</section></section>', main)[0]
+    assert panel.count('data-scholar-chart') == panel.count('data-scholar-values') == 1
+    assert 'aria-labelledby="citation-title"' in panel and '<h2 id="citation-title">' in panel
+print('PASS: integrated citation summary/chart with one Google Scholar link per publication page.')
