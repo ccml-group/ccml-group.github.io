@@ -118,7 +118,7 @@ assert 'experience is not required' in (ROOT / 'join.html').read_text()
 assert 'recommend around six months' in (ROOT / 'join.html').read_text()
 print('PASS: reciprocal language links, bilingual addresses and recruitment; publication metadata and authorship preserved.')
 
-rank = {'submitted': 0, 'accepted': 1, 'published': 2, 'preparation': 3}
+rank = {'submitted': 0, 'accepted': 1, 'published': 2}
 expected_order = [f"pub-{p['number']}" for p in pubs]
 assert [rank[p['status']] for p in pubs] == sorted(rank[p['status']] for p in pubs)
 assert expected_order[0] == 'pub-37'
@@ -194,5 +194,7 @@ for filename in ['publications.html', 'ko/publications.html']:
     assert main.count('href="https://scholar.google.com/citations?user=iqaMS78AAAAJ&amp;hl=en"') == 1
     panel = re.search(r'<section class="scholar-panel scholar-panel--publications".*?</section></section>', main)[0]
     assert panel.count('data-scholar-chart') == panel.count('data-scholar-values') == 1
-    assert 'aria-labelledby="citation-title"' in panel and '<h2 id="citation-title">' in panel
+    assert 'aria-labelledby="citation-title"' in panel and '<h2 id="citation-title" class="eyebrow">' in panel
+    status = re.search(r'<select id="pub-status">.*?</select>', main)[0]
+    assert re.findall(r'<option value="([^"]+)"', status) == ['all', 'published', 'accepted', 'submitted']
 print('PASS: integrated citation summary/chart with one Google Scholar link per publication page.')
