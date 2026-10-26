@@ -168,3 +168,21 @@ for filename in ['publications.html', 'ko/publications.html']:
     assert text.count('class="impact-factor"') == 33
     assert text.count('class="caption impact-factor-note"') == 1
 print('PASS: 33 sourced JIFs; publication-time release boundaries; accepted/latest policy; bilingual and selected-publication consistency.')
+
+from collections import Counter
+year_counts = Counter(p['year'] for p in pubs)
+assert next(p for p in pubs if p['number'] == 6)['year'] == 2018
+for filename in ['publications.html', 'ko/publications.html']:
+    text = (ROOT / filename).read_text()
+    groups = re.findall(r'<section class="publication-year" data-publication-year="(\d+)".*?</section>', text)
+    assert [int(year) for year in groups] == sorted(year_counts, reverse=True)
+    for group in re.findall(r'<section class="publication-year".*?</section>', text):
+        year = int(re.search(r'data-publication-year="(\d+)"', group)[1])
+        articles = re.findall(r'<article class="publication(?: has-toc)?".*?</article>', group)
+        assert len(articles) == year_counts[year]
+        assert all(f'data-year="{year}"' in article for article in articles)
+        assert f'<span class="publication-year-count">({len(articles)})</span>' in group
+        assert f'aria-labelledby="publications-{year}"' in group
+        assert 'class="caption publication-year-summary"' in group
+    assert sum(year_counts.values()) == 36
+print('PASS: descending annual sections, accurate counts, stable publication IDs and corrected 2018 metadata.')

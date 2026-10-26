@@ -8,7 +8,7 @@ Release boundaries: 2022 JIF released 2023-06-28; 2023 JIF released 2024-06-20; 
 [2024 JIF correction list](https://journalcitationreports.zendesk.com/hc/en-gb/articles/36310787349521-2025) checked: no changes to ACS Catalysis, ACS AMI or JMCA.
 
 Date precision: #30 is verified to July 2026 by the coauthor’s Stanford bibliography; #26 has April 2026 issue metadata; #12 is bounded by November 2022 DOI registration and March 2023 issue metadata. These intervals do not cross a JCR release boundary. DOI registration is not treated as an exact publication date.
-#6 retains the existing displayed year 2019, but Crossref records online publication 2018-02-02, so its publication-time IF uses 2016 JIF. #17 has a 2025 issue year but first online publication 2024-11-29.
+#6 was corrected from 2019 to 2018 using Crossref (online 2018-02-02, issue 2018-02-15), so its publication-time IF uses 2016 JIF. #17 has a 2025 issue year but first online publication 2024-11-29.
 The Chem Catalysis source labels columns by release year (2026/2025), so its 10.7 is normalized here to JIF citation year 2025. University JCR exports/catalogues supplement publisher sources where historical publisher metrics are no longer public.
 
 | Work | Journal | JIF citation year | IF | Basis / publication date | Metric source | Date source |

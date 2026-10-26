@@ -38,6 +38,20 @@ if (filters) {
       publication.hidden = !matches;
       if (matches) count += 1;
     });
+    document.querySelectorAll('.publication-year').forEach(section => {
+      const visible = Array.from(section.querySelectorAll('.publication')).filter(publication => !publication.hidden);
+      section.hidden = visible.length === 0;
+      section.querySelector('.publication-year-count').textContent = `(${visible.length})`;
+      const summary = section.querySelector('.publication-year-summary');
+      summary.hidden = !visible.some(publication => publication.dataset.status !== 'published');
+      const labels = korean
+        ? { published: '게재', accepted: '게재 확정', submitted: '투고 중' }
+        : { published: 'published', accepted: 'accepted', submitted: 'submitted' };
+      summary.textContent = Object.entries(labels).map(([state, label]) => {
+        const total = visible.filter(publication => publication.dataset.status === state).length;
+        return total ? (korean ? `${label} ${total}편` : `${total} ${label}`) : '';
+      }).filter(Boolean).join(' · ');
+    });
     document.querySelector('#result-count').textContent = korean ? `${count}건` : `${count} ${count === 1 ? 'work' : 'works'}`;
     document.querySelector('#no-results').hidden = count !== 0;
   }

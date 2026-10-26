@@ -90,3 +90,7 @@ html[lang=ko] [lang=en]{word-break:normal}
 .journal em{color:#345b72;font-weight:700}
 
 .impact-factor{color:#345b72;font-weight:700;font-style:normal;white-space:nowrap}
+.publication-year{margin-top:56px;scroll-margin-top:100px}
+.publication-year-heading{display:flex;align-items:baseline;gap:12px;font-size:28px;letter-spacing:-.03em;margin:0 0 18px;color:#345b72}
+.publication-year-count{font-size:18px;font-weight:400;letter-spacing:0;color:var(--muted)}
+.publication-year-summary{margin:-8px 0 18px}
