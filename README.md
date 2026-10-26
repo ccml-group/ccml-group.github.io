@@ -10,6 +10,7 @@
 - 공통 디자인은 `css/style.css`, 메뉴·언어 전환·논문 검색은 `js/main.js`에 있습니다.
 - 논문 메타데이터 사본은 `data/publications.json`입니다. 논문 수정 시 이 파일과 두 언어의 `publications.html`, 필요한 경우 두 홈의 대표 논문도 함께 수정합니다.
 - 인용 통계는 `data/scholar.js`에서 읽고, `js/scholar.js`가 언어별로 표시합니다. 주간 자동 갱신 설정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)에 있습니다.
+- 논문 목록에는 graphical abstract만 표시합니다. 없는 항목은 텍스트만 표시하며 Figure 1이나 다른 그림으로 대체하지 않습니다.
 - 연구 그림과 편집 내역은 [RESEARCH-FIGURES.md](RESEARCH-FIGURES.md), 논문 대표 그림은 [TOC-SOURCES.md](TOC-SOURCES.md)에 기록했습니다.
 
 ## 연구 참여 및 위치

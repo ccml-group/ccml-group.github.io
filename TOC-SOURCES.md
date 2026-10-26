@@ -1,3 +1,7 @@
+# Current display policy — 2026-10-26
+
+Only the 23 images recorded as graphical abstracts are displayed. Figure 1 previews (#29, #22, #19, #13, #10, #9) and the author-selected graphic (#5) have been removed from both publication pages. Entries without a graphical abstract use the full text width; no placeholder or substitute figure is shown. Original local files and the historical collection notes below are retained for provenance.
+
 # Publication image coverage — 2026-10-17
 
 All available graphics are local files; thumbnails have no outbound link. Titles retain DOI links.

@@ -82,14 +82,7 @@
     "title": "Retarding Moisture-Induced Chemical Degradation of Yttrium Tellurides by Tailoring Grain Boundary Chemistry",
     "doi": "https://doi.org/10.1038/s41467-026-76056-8",
     "year": 2026,
-    "status": "published",
-    "toc": {
-      "image": "assets/toc/publication-29.png",
-      "alt": "Figure 1: Retarding Moisture-Induced Chemical Degradation of Yttrium Tellurides by Tailoring Grain Boundary Chemistry",
-      "source": "https://doi.org/10.1038/s41467-026-76056-8",
-      "kind": "figure"
-    },
-    "toc_status": "available"
+    "status": "published"
   },
   {
     "number": 28,
@@ -194,14 +187,7 @@
     "title": "An Atomic-Scale View at γ’-Fe₄N as Hydrogen Barrier Material",
     "doi": "https://doi.org/10.1002/admi.202500207",
     "year": 2025,
-    "status": "published",
-    "toc": {
-      "image": "assets/toc/publication-22.png",
-      "alt": "Figure 1: An Atomic-Scale View at γ’-Fe₄N as Hydrogen Barrier Material",
-      "source": "https://doi.org/10.1002/admi.202500207",
-      "kind": "figure"
-    },
-    "toc_status": "available"
+    "status": "published"
   },
   {
     "number": 21,
@@ -242,14 +228,7 @@
     "title": "Best Practices for In-situ and Operando Techniques within Electrocatalytic Systems",
     "doi": "https://doi.org/10.1038/s41467-025-57563-6",
     "year": 2025,
-    "status": "published",
-    "toc": {
-      "image": "assets/toc/publication-19.png",
-      "alt": "Figure 1: Best Practices for In-situ and Operando Techniques within Electrocatalytic Systems",
-      "source": "https://doi.org/10.1038/s41467-025-57563-6",
-      "kind": "figure"
-    },
-    "toc_status": "available"
+    "status": "published"
   },
   {
     "number": 18,
@@ -338,14 +317,7 @@
     "title": "Black Box vs. Grey Box: Comparing GAP and GPrep-DFTB for Ruthenium and Ruthenium Oxide",
     "doi": "https://doi.org/10.1063/5.0141233",
     "year": 2023,
-    "status": "published",
-    "toc": {
-      "image": "assets/toc/publication-13.jpg",
-      "alt": "Figure 1: Black Box vs. Grey Box: Comparing GAP and GPrep-DFTB for Ruthenium and Ruthenium Oxide",
-      "source": "https://doi.org/10.1063/5.0141233",
-      "kind": "figure"
-    },
-    "toc_status": "available"
+    "status": "published"
   },
   {
     "number": 12,
@@ -386,14 +358,7 @@
     "title": "Data-Efficient Iterative Training of Gaussian Approximation Potentials: Application to Surface Structure Determination of Rutile IrO₂ and RuO₂",
     "doi": "https://doi.org/10.1063/5.0071249",
     "year": 2021,
-    "status": "published",
-    "toc_status": "available",
-    "toc": {
-      "image": "assets/toc/publication-10.png",
-      "alt": "Figure 1: Data-Efficient Iterative Training of Gaussian Approximation Potentials: Application to Surface Structure Determination of Rutile IrO₂ and RuO₂",
-      "source": "https://pure.mpg.de/rest/items/item_3351684_8/component/file_3360380/content",
-      "kind": "figure"
-    }
+    "status": "published"
   },
   {
     "number": 9,
@@ -402,14 +367,7 @@
     "title": "IrO₂ Surface Complexions Identified through Machine Learning and Surface Investigations",
     "doi": "https://doi.org/10.1103/PhysRevLett.125.206101",
     "year": 2020,
-    "status": "published",
-    "toc": {
-      "image": "assets/toc/publication-9.png",
-      "alt": "Figure 1: IrO₂ Surface Complexions Identified through Machine Learning and Surface Investigations",
-      "source": "https://arxiv.org/abs/2009.11569",
-      "kind": "figure"
-    },
-    "toc_status": "available"
+    "status": "published"
   },
   {
     "number": 8,
@@ -466,14 +424,7 @@
     "title": "Aligning the Band Structures of Polymorphic Molybdenum Oxides and Organic Emitters in Light-emitting Diodes",
     "doi": "https://doi.org/10.1103/PhysRevApplied.7.024025",
     "year": 2017,
-    "status": "published",
-    "toc_status": "available",
-    "toc": {
-      "image": "assets/toc/publication-5.png",
-      "alt": "Author-selected graphic: Aligning the Band Structures of Polymorphic Molybdenum Oxides and Organic Emitters in Light-emitting Diodes",
-      "source": "https://sites.google.com/view/jang-group/publications",
-      "kind": "author-graphic"
-    }
+    "status": "published"
   },
   {
     "number": 4,

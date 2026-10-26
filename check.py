@@ -63,13 +63,15 @@ for p in pubs:
         assert (ROOT / p['toc']['image']).is_file()
         assert escape(p['toc']['alt']) in (ROOT / 'publications.html').read_text()
 
-assert sum('toc' in p for p in pubs) == 30
+assert sum('toc' in p for p in pubs) == 23
+fallback_removed = {29, 22, 19, 13, 10, 9, 5}
 for p in pubs:
-    assert ('toc' in p) == (p['status'] == 'published')
+    assert ('toc' in p) == (p['status'] == 'published' and p['number'] not in fallback_removed)
     if 'toc' in p:
         assert p['toc']['image'].startswith('assets/toc/')
+        assert p['toc']['kind'] == 'graphical-abstract'
 page = (ROOT / 'publications.html').read_text()
-assert page.count('<figure class="publication-toc">') == 30
+assert page.count('<figure class="publication-toc">') == 23
 assert not re.search(r'<a[^>]*class="publication-toc', page)
 for figure in re.findall(r'<figure class="publication-toc">.*?</figure>', page):
     assert '<a ' not in figure
@@ -98,7 +100,7 @@ for pub in pubs:
     authors = re.search(r'<p class="authors"[^>]*>(.*?)</p>', article)[1]
     assert re.sub(r'<[^>]+>', '', authors) == escape(pub['authors'])
     assert ('class="lead-author"' in article) == (pub['number'] in expected_lead)
-assert ko_page.count('<figure class="publication-toc">') == 30
+assert ko_page.count('<figure class="publication-toc">') == 23
 assert 'Title, author or journal' not in ko_page and 'Underlined' not in ko_page
 assert '경험이 없어도' in (ROOT / 'ko/join.html').read_text()
 assert '약 6개월의 참여를 권장' in (ROOT / 'ko/join.html').read_text()
@@ -116,3 +118,13 @@ for name in ['publications.html', 'ko/publications.html']:
 assert '30 published articles, 3 accepted and 3 submitted manuscripts' in page
 assert '게재 논문 30건 · 게재 확정 3건 · 투고 중 3건' in ko_page
 print('PASS: AEM acceptance, journal details and submitted/accepted/published order in both languages.')
+
+for filename in ['publications.html', 'ko/publications.html']:
+    text = (ROOT / filename).read_text()
+    assert text.count('* Corresponding author · † Co-first author') == 1
+    for article in re.findall(r'<article class="publication(?: has-toc)?".*?</article>', text):
+        number = int(re.search(r'id="pub-(\d+)"', article)[1])
+        expected = next(p for p in pubs if p['number'] == number).get('toc') is not None
+        assert ('has-toc' in article) == expected
+        assert ('<figure class="publication-toc">' in article) == expected
+print('PASS: 23 graphical abstracts only, no fallback image columns, concise author-symbol legend.')
