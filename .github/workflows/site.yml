@@ -21,8 +21,11 @@ jobs:
       - uses: actions/checkout@v6
       - name: Check updater and website
         run: |
+          python3 scripts/render_publications.py --check
+          python3 scripts/test_publications.py
           python3 scripts/test_scholar.py
           node scripts/test_scholar_ui.js
+          node scripts/test_main_ui.js
           python3 check.py
       - name: Check Scholar configuration
         id: scholar-config

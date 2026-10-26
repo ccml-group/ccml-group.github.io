@@ -1,0 +1,354 @@
+{
+  "version": 1,
+  "images": {
+    "assets/research/catalytic-stability-scientific.png": {
+      "width": 1600,
+      "height": 1600,
+      "source_sha256": "360bf0a2f6f7d446057f2023d21a0b3d6a60f13656272136478a572d7957375d",
+      "variants": [
+        {
+          "path": "assets/derived/research/catalytic-stability-scientific-640.webp",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "assets/derived/research/catalytic-stability-scientific-960.webp",
+          "width": 960,
+          "height": 960
+        }
+      ]
+    },
+    "assets/research/dynamic-interfaces-scientific.png": {
+      "width": 1600,
+      "height": 1600,
+      "source_sha256": "ddf71014b4d032354a13de0a53deaf1f21f9854339b31f2aea42cc2a505cbe06",
+      "variants": [
+        {
+          "path": "assets/derived/research/dynamic-interfaces-scientific-640.webp",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "assets/derived/research/dynamic-interfaces-scientific-960.webp",
+          "width": 960,
+          "height": 960
+        }
+      ]
+    },
+    "assets/research/functional-materials-scientific.png": {
+      "width": 1600,
+      "height": 1600,
+      "source_sha256": "1256fd235eb2576ea1b1039c3271579742f87c3b0455c73e90a02bdb2f5bbab7",
+      "variants": [
+        {
+          "path": "assets/derived/research/functional-materials-scientific-640.webp",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "assets/derived/research/functional-materials-scientific-960.webp",
+          "width": 960,
+          "height": 960
+        }
+      ]
+    },
+    "assets/research/machine-learning-scientific.png": {
+      "width": 1600,
+      "height": 1600,
+      "source_sha256": "f8a37a1fc19223bd1bf3ce7765b374ef931a58bb1071ada59ed2bbc8e2475486",
+      "variants": [
+        {
+          "path": "assets/derived/research/machine-learning-scientific-640.webp",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "assets/derived/research/machine-learning-scientific-960.webp",
+          "width": 960,
+          "height": 960
+        }
+      ]
+    },
+    "assets/toc/publication-30.png": {
+      "width": 520,
+      "height": 327,
+      "source_sha256": "c71d00af640b43af6f793eef463d67917ff87b15115d0b264b232248d9250cef",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-30-480.webp",
+          "width": 480,
+          "height": 302
+        }
+      ]
+    },
+    "assets/toc/publication-28.png": {
+      "width": 520,
+      "height": 328,
+      "source_sha256": "1a199392195cacd7aaea8fd3e9fa8ff4ae863f6d0b878a1cc06649337429aa65",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-28-480.webp",
+          "width": 480,
+          "height": 303
+        }
+      ]
+    },
+    "assets/toc/publication-27-official.svg": {
+      "width": 220.0,
+      "height": 118.49,
+      "source_sha256": "546c7485e97f7aa687ae9157ffdb451412c64705944a933473d6d4154cd0cf3a",
+      "variants": [
+        {
+          "path": "assets/toc/publication-27-official.svg",
+          "width": 220.0,
+          "height": 118.49
+        }
+      ]
+    },
+    "assets/toc/publication-26.png": {
+      "width": 1481,
+      "height": 718,
+      "source_sha256": "8e2eb0ad1fe01da70a7bd68c208836c51cad4fda6491d9c2f2a8544b1fb7f6b3",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-26-480.webp",
+          "width": 480,
+          "height": 233
+        }
+      ]
+    },
+    "assets/toc/publication-25.png": {
+      "width": 520,
+      "height": 359,
+      "source_sha256": "ee8445a11cd0c53457fa0126f61cb5ffd985c8d65f893ca1af6f3e3e2dd4e718",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-25-480.webp",
+          "width": 480,
+          "height": 331
+        }
+      ]
+    },
+    "assets/toc/publication-24.png": {
+      "width": 520,
+      "height": 283,
+      "source_sha256": "32194785334df98c21aab4974a998ff60b4c6ba8629d660f5f13878c46854b04",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-24-480.webp",
+          "width": 480,
+          "height": 261
+        }
+      ]
+    },
+    "assets/toc/publication-23.png": {
+      "width": 520,
+      "height": 230,
+      "source_sha256": "d8d1c207a660a34e93a93641b2729ca8d484d35a8d36fbe52d70dbf77eb2ed6b",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-23-480.webp",
+          "width": 480,
+          "height": 212
+        }
+      ]
+    },
+    "assets/toc/publication-21.png": {
+      "width": 520,
+      "height": 269,
+      "source_sha256": "2cce34c4bc3ba5022f92fbb5c18bedc0802e3969f6b9299b053ab5f28f8ce862",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-21-480.webp",
+          "width": 480,
+          "height": 248
+        }
+      ]
+    },
+    "assets/toc/publication-20.png": {
+      "width": 394,
+      "height": 355,
+      "source_sha256": "f8b05e0961b61bc855e8a385238a94eda051e294f00595a9b25916913c69c8c8",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-20-480.webp",
+          "width": 394,
+          "height": 355
+        }
+      ]
+    },
+    "assets/toc/publication-18-official.png": {
+      "width": 520,
+      "height": 200,
+      "source_sha256": "6abc70576e80449ba608a0543ac52c35defb2c990f54f30112d4d25b3d01ead8",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-18-official-480.webp",
+          "width": 480,
+          "height": 185
+        }
+      ]
+    },
+    "assets/toc/publication-17.png": {
+      "width": 1888,
+      "height": 945,
+      "source_sha256": "35724f225b04a7faf7893ebc400b8e3e40e7e10341d93372007164401a9ffd6e",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-17-480.webp",
+          "width": 480,
+          "height": 240
+        }
+      ]
+    },
+    "assets/toc/publication-16.png": {
+      "width": 520,
+      "height": 452,
+      "source_sha256": "f2fcdfcf4ff22f988b4e39aa2087ace84230ce41a3a21deca5bf02f36bf9ed26",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-16-480.webp",
+          "width": 480,
+          "height": 417
+        }
+      ]
+    },
+    "assets/toc/publication-15.png": {
+      "width": 520,
+      "height": 462,
+      "source_sha256": "55ab2c707414671d1229ad487b6e95b6a6912845d6d6b1aa63a58d0956b69a16",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-15-480.webp",
+          "width": 480,
+          "height": 426
+        }
+      ]
+    },
+    "assets/toc/publication-14.png": {
+      "width": 520,
+      "height": 242,
+      "source_sha256": "f5dee7aba16b2ff1721a995e581285ddc06891b2426c679d1434e059b08e1aac",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-14-480.webp",
+          "width": 480,
+          "height": 223
+        }
+      ]
+    },
+    "assets/toc/publication-12.jpg": {
+      "width": 1086,
+      "height": 1085,
+      "source_sha256": "5ed6ae8151fac8039be4b3346decbf8282d6a32471d005b59f2ab5f1fceea103",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-12-480.webp",
+          "width": 480,
+          "height": 480
+        }
+      ]
+    },
+    "assets/toc/publication-11.png": {
+      "width": 500,
+      "height": 263,
+      "source_sha256": "26884483440e0fb2ed30f134f5d4935d4fd8aee2a466a5b33aa027cc698a9b8d",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-11-480.webp",
+          "width": 480,
+          "height": 252
+        }
+      ]
+    },
+    "assets/toc/publication-8.jpg": {
+      "width": 394,
+      "height": 331,
+      "source_sha256": "1e278f99f75254fcdb7e5bce0302a92a27e97969dc6b78127069aabd397df8e5",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-8-480.webp",
+          "width": 394,
+          "height": 331
+        }
+      ]
+    },
+    "assets/toc/publication-7.png": {
+      "width": 520,
+      "height": 270,
+      "source_sha256": "eb3bbb7af860d4671eb7f389f0a0c9fa047b6d27451c96793585f84edc7546e1",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-7-480.webp",
+          "width": 480,
+          "height": 249
+        }
+      ]
+    },
+    "assets/toc/publication-6.png": {
+      "width": 520,
+      "height": 429,
+      "source_sha256": "17da7e9589916052ce25b493564e765443c29471a1f2d85f86516b03865cc456",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-6-480.webp",
+          "width": 480,
+          "height": 396
+        }
+      ]
+    },
+    "assets/toc/publication-4.png": {
+      "width": 520,
+      "height": 281,
+      "source_sha256": "65e578d956ae8a026453e6cbae35ecb379347f8d99293dca4b68694712f3ebe6",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-4-480.webp",
+          "width": 480,
+          "height": 259
+        }
+      ]
+    },
+    "assets/toc/publication-3.png": {
+      "width": 520,
+      "height": 432,
+      "source_sha256": "70af1dd6c8dd91ea15e8d468bf0bb19761921872ef2dcf81a721f245c11b49a4",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-3-480.webp",
+          "width": 480,
+          "height": 399
+        }
+      ]
+    },
+    "assets/toc/publication-2.png": {
+      "width": 520,
+      "height": 231,
+      "source_sha256": "bd9cf274032050df6ca208e72b7f2ff55b5b737f0ecae01d55ea9a4e7ce91632",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-2-480.webp",
+          "width": 480,
+          "height": 213
+        }
+      ]
+    },
+    "assets/toc/publication-1.png": {
+      "width": 520,
+      "height": 414,
+      "source_sha256": "3da65ec26a67281fe8d03ed0580f3e8291ed4643ac6bde4bc2b14d47cadb7626",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-1-480.webp",
+          "width": 480,
+          "height": 382
+        }
+      ]
+    }
+  },
+  "share_card": {
+    "path": "assets/share-card.png",
+    "width": 1200,
+    "height": 630
+  }
+}

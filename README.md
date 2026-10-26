@@ -8,10 +8,12 @@
 
 - 문구와 메뉴·푸터는 각 HTML에서 변경합니다. 공통 내용은 한국어·영어 페이지에 함께 반영합니다.
 - 공통 디자인은 `css/style.css`, 메뉴·언어 전환·논문 검색은 `js/main.js`에 있습니다.
-- 논문 메타데이터 사본은 `data/publications.json`입니다. 논문 수정 시 이 파일과 두 언어의 `publications.html`, 필요한 경우 두 홈의 대표 논문도 함께 수정합니다.
+- 논문 정보는 `data/publications.json`에서 수정한 뒤 `python3 scripts/render_publications.py`를 실행합니다. 한영 목록·연도별 편수·필터 연도·홈 대표논문에 함께 반영됩니다. 주저자로 표시할 PI는 `pi_lead_author: true`로 지정합니다.
+- 대표논문 4편은 `data/selected-publications.json`의 번호로 선택합니다. IF는 검증한 기준연도·수치·출처를 기록하며 자동 조회하지 않습니다.
 - 인용 통계는 `data/scholar.js`에서 읽고, `js/scholar.js`가 언어별로 표시합니다. 주간 자동 갱신 설정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)에 있습니다.
 - 논문 목록에는 graphical abstract만 표시합니다. 없는 항목은 텍스트만 표시하며 Figure 1이나 다른 그림으로 대체하지 않습니다.
 - 연구 그림과 편집 내역은 [RESEARCH-FIGURES.md](RESEARCH-FIGURES.md), 논문 대표 그림은 [TOC-SOURCES.md](TOC-SOURCES.md)에 기록했습니다.
+- 원본 연구 그림과 TOC는 유지하고, 표시용 파생본은 `assets/derived/`에 저장합니다. 원본 그림 변경 후에는 기존 Pillow 환경에서 `python3 scripts/prepare_images.py`를 실행하고 연구 그림의 srcset도 갱신합니다. 공유 미리보기는 `assets/share-card.png`를 사용합니다.
 
 ## 연구 참여 및 위치
 
@@ -24,17 +26,20 @@
 ## 검증과 배포
 
 ```sh
+python3 scripts/render_publications.py --check
+python3 scripts/test_publications.py
 python3 check.py
 python3 scripts/test_scholar.py
 node scripts/test_scholar_ui.js
+node scripts/test_main_ui.js
 ```
 
-내부 링크·앵커·이미지, 언어 전환 링크, 논문 37건의 메타데이터·상태·주저자 표시와 인용 통계 표시를 검증합니다. 논문 상태는 기존 공개 목록 기준이며 이번 번역 작업에서 새로 조사하지 않았습니다.
+내부 링크·앵커·이미지, 한영 연결, 논문 정보·상태·주저자 표시, 검색·필터·메뉴, 인용 통계 표시와 JSON/HTML 일치를 검증합니다. 새 논문의 저자·상태·IF는 확인된 자료로 입력해야 합니다.
 
 `main`에 푸시하면 GitHub Actions가 검증 후 HTML과 `css/js/assets/data/ko`를 GitHub Pages에 배포합니다. 매주 자동 인용 통계 갱신도 같은 배포 과정을 사용합니다.
 
-로컬 미리보기는 이 폴더에서 다음 명령을 실행한 후 http://127.0.0.1:8765/ko/index.html 을 엽니다.
+로컬 미리보기는 이 폴더에서 다음 명령을 실행한 후 http://127.0.0.1:8767/ko/index.html 을 엽니다. 다른 프로그램이 사용 중이면 빈 포트를 선택합니다.
 
 ```sh
-python3 -m http.server 8765 --bind 127.0.0.1
+python3 -m http.server 8767 --bind 127.0.0.1
 ```
