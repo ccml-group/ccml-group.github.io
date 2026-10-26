@@ -86,4 +86,7 @@ html[lang=ko] [lang=en]{word-break:normal}
 @media(max-width:900px){.nav-wrap{gap:0}.language-switch{margin-left:auto;margin-right:18px}#navigation{order:4;margin:0;gap:12px 25px;font-size:14px}}
 @media(max-width:600px){.method-note{padding:24px 0 0;border-left:0;border-top:1px solid var(--line)}.pathway-grid,.methods-grid{grid-template-columns:1fr;gap:18px}.methods-grid{gap:12px}.pathway-card{padding:24px}.visual-research-card>.card-figure-caption{padding:14px 24px 0}.language-switch{gap:6px;margin-right:12px}.hero-lab-name{font-size:14px}.faq summary{font-size:16px}}
 
-.journal{color:#345b72}
+.journal{color:var(--muted);font-weight:400}
+.journal em{color:#345b72;font-weight:700}
+
+.impact-factor{color:#345b72;font-weight:700;font-style:normal;white-space:nowrap}

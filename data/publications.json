@@ -37,7 +37,14 @@
     "doi": "",
     "year": 2026,
     "status": "accepted",
-    "toc_status": "awaiting-publication"
+    "toc_status": "awaiting-publication",
+    "impact_factor": {
+      "value": "25.5",
+      "year": 2025,
+      "basis": "latest",
+      "source": "https://pubs.acs.org/doi/10.1021/acsenergylett.6c02086",
+      "checked_on": "2026-10-26"
+    }
   },
   {
     "number": 32,
@@ -47,7 +54,14 @@
     "doi": "",
     "year": 2026,
     "status": "accepted",
-    "toc_status": "awaiting-publication"
+    "toc_status": "awaiting-publication",
+    "impact_factor": {
+      "value": "17.3",
+      "year": 2025,
+      "basis": "latest",
+      "source": "https://pubs.acs.org/page/ancac3/about.html",
+      "checked_on": "2026-10-26"
+    }
   },
   {
     "number": 31,
@@ -57,7 +71,14 @@
     "doi": "",
     "year": 2026,
     "status": "accepted",
-    "toc_status": "awaiting-publication"
+    "toc_status": "awaiting-publication",
+    "impact_factor": {
+      "value": "10.7",
+      "year": 2025,
+      "basis": "latest",
+      "source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf",
+      "checked_on": "2026-10-26"
+    }
   },
   {
     "number": 30,
@@ -73,7 +94,16 @@
       "source": "https://doi.org/10.1039/D6TA02069K",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "9.2",
+      "year": 2025,
+      "basis": "publication-time",
+      "source": "https://www.rsc.org/publishing/journals/journal-of-materials-chemistry-a",
+      "checked_on": "2026-10-26",
+      "publication_date": "2026-07",
+      "publication_date_source": "https://cargnellogroup.stanford.edu/publications/"
+    }
   },
   {
     "number": 29,
@@ -82,7 +112,16 @@
     "title": "Retarding Moisture-Induced Chemical Degradation of Yttrium Tellurides by Tailoring Grain Boundary Chemistry",
     "doi": "https://doi.org/10.1038/s41467-026-76056-8",
     "year": 2026,
-    "status": "published"
+    "status": "published",
+    "impact_factor": {
+      "value": "18.1",
+      "year": 2025,
+      "basis": "publication-time",
+      "source": "https://www.nature.com/ncomms/journal-impact",
+      "checked_on": "2026-10-26",
+      "publication_date": "2026-07-25",
+      "publication_date_source": "https://crossmark.crossref.org/dialog/?doi=10.1038%2Fs41467-026-76056-8"
+    }
   },
   {
     "number": 28,
@@ -98,7 +137,16 @@
       "source": "https://doi.org/10.1039/D5TA10136K",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "9.5",
+      "year": 2024,
+      "basis": "publication-time",
+      "source": "https://pubs.rsc.org/en/journals/journal/TA",
+      "checked_on": "2026-10-26",
+      "publication_date": "2026-05-29",
+      "publication_date_source": "https://pubs.rsc.org/en/content/articlelanding/2026/ta/d5ta10136k"
+    }
   },
   {
     "number": 27,
@@ -114,7 +162,16 @@
       "source": "https://doi.org/10.1021/acscatal.6c01516",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "13.1",
+      "year": 2024,
+      "basis": "publication-time",
+      "source": "https://portalcientifico.uam.es/es/ipublic/source/582592",
+      "checked_on": "2026-10-26",
+      "publication_date": "2026-05-21",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facscatal.6c01516"
+    }
   },
   {
     "number": 26,
@@ -130,7 +187,16 @@
       "source": "https://arxiv.org/abs/2509.25807",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "3.3",
+      "year": 2024,
+      "basis": "publication-time",
+      "source": "https://portalcientifico.upm.es/en/ipublic/source/10637",
+      "checked_on": "2026-10-26",
+      "publication_date": "2026-04",
+      "publication_date_source": "https://api.crossref.org/works/10.1016%2Fj.commatsci.2026.114666"
+    }
   },
   {
     "number": 25,
@@ -146,7 +212,16 @@
       "source": "https://doi.org/10.1021/acsami.5c24310",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "8.2",
+      "year": 2024,
+      "basis": "publication-time",
+      "source": "https://topj.lib.whu.edu.cn/show.asp?cat=zk&id=2774",
+      "checked_on": "2026-10-26",
+      "publication_date": "2026-02-10",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facsami.5c24310"
+    }
   },
   {
     "number": 24,
@@ -162,7 +237,16 @@
       "source": "https://doi.org/10.1021/jacs.5c06076",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "15.6",
+      "year": 2024,
+      "basis": "publication-time",
+      "source": "https://kniznica.umb.sk/app/cmsSiteBoxAttachment.php?ID=6218&cmsDataID=0",
+      "checked_on": "2026-10-26",
+      "publication_date": "2025-08-13",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Fjacs.5c06076"
+    }
   },
   {
     "number": 23,
@@ -178,7 +262,16 @@
       "source": "https://doi.org/10.1021/acscatal.5c00756",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "13.1",
+      "year": 2024,
+      "basis": "publication-time",
+      "source": "https://portalcientifico.uam.es/es/ipublic/source/582592",
+      "checked_on": "2026-10-26",
+      "publication_date": "2025-07-10",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facscatal.5c00756"
+    }
   },
   {
     "number": 22,
@@ -187,7 +280,16 @@
     "title": "An Atomic-Scale View at γ’-Fe₄N as Hydrogen Barrier Material",
     "doi": "https://doi.org/10.1002/admi.202500207",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "impact_factor": {
+      "value": "4.3",
+      "year": 2023,
+      "basis": "publication-time",
+      "source": "https://bcucluj.ro/sites/default/files/public/images/doc/lista-titluri-baza-clarivate-jcr-2023-iunie2023.pdf",
+      "checked_on": "2026-10-26",
+      "publication_date": "2025-05-13",
+      "publication_date_source": "https://api.crossref.org/works/10.1002%2Fadmi.202500207"
+    }
   },
   {
     "number": 21,
@@ -203,7 +305,17 @@
       "source": "https://doi.org/10.1039/D5TA00991J",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "10.8",
+      "year": 2023,
+      "basis": "publication-time",
+      "source": "https://journalcitationreports.zendesk.com/hc/en-gb/articles/28351055638801-2024",
+      "checked_on": "2026-10-26",
+      "publication_date": "2025-04-24",
+      "publication_date_source": "https://pubs.rsc.org/en/content/articlelanding/2025/ta/d5ta00991j",
+      "revision_released_on": "2024-10-23"
+    }
   },
   {
     "number": 20,
@@ -219,7 +331,16 @@
       "source": "https://doi.org/10.1002/anie.202501017",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "16.1",
+      "year": 2023,
+      "basis": "publication-time",
+      "source": "https://bcucluj.ro/sites/default/files/public/images/doc/lista-titluri-baza-clarivate-jcr-2023-iunie2023.pdf",
+      "checked_on": "2026-10-26",
+      "publication_date": "2025-05-04",
+      "publication_date_source": "https://api.crossref.org/works/10.1002%2Fanie.202501017"
+    }
   },
   {
     "number": 19,
@@ -228,7 +349,16 @@
     "title": "Best Practices for In-situ and Operando Techniques within Electrocatalytic Systems",
     "doi": "https://doi.org/10.1038/s41467-025-57563-6",
     "year": 2025,
-    "status": "published"
+    "status": "published",
+    "impact_factor": {
+      "value": "14.7",
+      "year": 2023,
+      "basis": "publication-time",
+      "source": "https://bcucluj.ro/sites/default/files/public/images/doc/lista-titluri-baza-clarivate-jcr-2023-iunie2023.pdf",
+      "checked_on": "2026-10-26",
+      "publication_date": "2025-03-16",
+      "publication_date_source": "https://api.crossref.org/works/10.1038%2Fs41467-025-57563-6"
+    }
   },
   {
     "number": 18,
@@ -244,7 +374,17 @@
       "source": "https://doi.org/10.1021/jacs.4c17739",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "14.5",
+      "year": 2023,
+      "basis": "publication-time",
+      "source": "https://journalcitationreports.zendesk.com/hc/en-gb/articles/28351055638801-2024",
+      "checked_on": "2026-10-26",
+      "publication_date": "2025-02-19",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Fjacs.4c17739",
+      "revision_released_on": "2024-10-23"
+    }
   },
   {
     "number": 17,
@@ -260,7 +400,16 @@
       "source": "https://doi.org/10.1039/D4EE02839B",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "32.4",
+      "year": 2023,
+      "basis": "publication-time",
+      "source": "https://urv.scimarina.org/en/ipublic/source/16732",
+      "checked_on": "2026-10-26",
+      "publication_date": "2024-11-29",
+      "publication_date_source": "https://pubs.rsc.org/en/content/articlelanding/2025/ee/d4ee02839b"
+    }
   },
   {
     "number": 16,
@@ -276,7 +425,16 @@
       "source": "https://doi.org/10.1021/acscatal.3c05230",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "12.9",
+      "year": 2022,
+      "basis": "publication-time",
+      "source": "https://portalcientifico.uam.es/es/ipublic/source/582592",
+      "checked_on": "2026-10-26",
+      "publication_date": "2024-05-29",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facscatal.3c05230"
+    }
   },
   {
     "number": 15,
@@ -292,7 +450,16 @@
       "source": "https://doi.org/10.1021/acs.jpcc.3c04049",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "3.7",
+      "year": 2022,
+      "basis": "publication-time",
+      "source": "https://www.iit.comillas.edu/publicacion/info_revista/en/877/Journal_of_Physical_Chemistry_C",
+      "checked_on": "2026-10-26",
+      "publication_date": "2023-08-28",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facs.jpcc.3c04049"
+    }
   },
   {
     "number": 14,
@@ -308,7 +475,16 @@
       "source": "https://doi.org/10.1021/acsenergylett.3c00842",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "22.0",
+      "year": 2022,
+      "basis": "publication-time",
+      "source": "https://pubs.acs.org/doi/abs/10.1021/acsenergylett.3c01512",
+      "checked_on": "2026-10-26",
+      "publication_date": "2023-07-14",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facsenergylett.3c00842"
+    }
   },
   {
     "number": 13,
@@ -317,7 +493,16 @@
     "title": "Black Box vs. Grey Box: Comparing GAP and GPrep-DFTB for Ruthenium and Ruthenium Oxide",
     "doi": "https://doi.org/10.1063/5.0141233",
     "year": 2023,
-    "status": "published"
+    "status": "published",
+    "impact_factor": {
+      "value": "4.304",
+      "year": 2021,
+      "basis": "publication-time",
+      "source": "https://publishing.aip.org/wp-content/uploads/2023/05/AIPP-ProductGuide2022-v3-052023-web.pdf",
+      "checked_on": "2026-10-26",
+      "publication_date": "2023-06-12",
+      "publication_date_source": "https://api.crossref.org/works/10.1063%2F5.0141233"
+    }
   },
   {
     "number": 12,
@@ -333,7 +518,16 @@
       "source": "https://doi.org/10.1016/j.apsusc.2022.155913",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "7.392",
+      "year": 2021,
+      "basis": "publication-time",
+      "source": "https://jpt.mohe.gov.my/aan/images/Top_5_Science_Jurnal_2021.pdf",
+      "checked_on": "2026-10-26",
+      "publication_date": "2022-11/2023-03",
+      "publication_date_source": "https://api.crossref.org/works/10.1016%2Fj.apsusc.2022.155913"
+    }
   },
   {
     "number": 11,
@@ -349,7 +543,16 @@
       "source": "https://doi.org/10.1002/cssc.202200015",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "8.928",
+      "year": 2020,
+      "basis": "publication-time",
+      "source": "https://formacao.chemistry.pt/chemistry-europe",
+      "checked_on": "2026-10-26",
+      "publication_date": "2022-04-13",
+      "publication_date_source": "https://api.crossref.org/works/10.1002%2Fcssc.202200015"
+    }
   },
   {
     "number": 10,
@@ -358,7 +561,16 @@
     "title": "Data-Efficient Iterative Training of Gaussian Approximation Potentials: Application to Surface Structure Determination of Rutile IrO₂ and RuO₂",
     "doi": "https://doi.org/10.1063/5.0071249",
     "year": 2021,
-    "status": "published"
+    "status": "published",
+    "impact_factor": {
+      "value": "3.488",
+      "year": 2020,
+      "basis": "publication-time",
+      "source": "https://www.iit.comillas.edu/publicacion/info_revista/en/607/Journal_of_Chemical_Physics",
+      "checked_on": "2026-10-26",
+      "publication_date": "2021-12-28",
+      "publication_date_source": "https://api.crossref.org/works/10.1063%2F5.0071249"
+    }
   },
   {
     "number": 9,
@@ -367,7 +579,16 @@
     "title": "IrO₂ Surface Complexions Identified through Machine Learning and Surface Investigations",
     "doi": "https://doi.org/10.1103/PhysRevLett.125.206101",
     "year": 2020,
-    "status": "published"
+    "status": "published",
+    "impact_factor": {
+      "value": "8.385",
+      "year": 2019,
+      "basis": "publication-time",
+      "source": "https://eazy.com.tr/wp-content/uploads/2021/01/APS-Journals-Catalog-2021.pdf",
+      "checked_on": "2026-10-26",
+      "publication_date": "2020-11-10",
+      "publication_date_source": "https://api.crossref.org/works/10.1103%2FPhysRevLett.125.206101"
+    }
   },
   {
     "number": 8,
@@ -383,7 +604,16 @@
       "source": "https://doi.org/10.1002/aenm.201803795",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "21.875",
+      "year": 2017,
+      "basis": "publication-time",
+      "source": "https://portalcientifico.uam.es/es/ipublic/source/619858",
+      "checked_on": "2026-10-26",
+      "publication_date": "2019-02-21",
+      "publication_date_source": "https://api.crossref.org/works/10.1002%2Faenm.201803795"
+    }
   },
   {
     "number": 7,
@@ -399,7 +629,16 @@
       "source": "https://doi.org/10.1021/acs.jpcc.8b05595",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "4.484",
+      "year": 2017,
+      "basis": "publication-time",
+      "source": "https://isms.illinois.edu/2019/schedule/book.pdf",
+      "checked_on": "2026-10-26",
+      "publication_date": "2018-08-28",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facs.jpcc.8b05595"
+    }
   },
   {
     "number": 6,
@@ -415,7 +654,16 @@
       "source": "https://doi.org/10.1021/acs.jpcc.7b11295",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "4.536",
+      "year": 2016,
+      "basis": "publication-time",
+      "source": "https://www.iit.comillas.edu/publicacion/info_revista/en/877/Journal_of_Physical_Chemistry_C",
+      "checked_on": "2026-10-26",
+      "publication_date": "2018-02-02",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facs.jpcc.7b11295"
+    }
   },
   {
     "number": 5,
@@ -424,7 +672,16 @@
     "title": "Aligning the Band Structures of Polymorphic Molybdenum Oxides and Organic Emitters in Light-emitting Diodes",
     "doi": "https://doi.org/10.1103/PhysRevApplied.7.024025",
     "year": 2017,
-    "status": "published"
+    "status": "published",
+    "impact_factor": {
+      "value": "4.061",
+      "year": 2015,
+      "basis": "publication-time",
+      "source": "https://journals.aps.org/prapplied/edannounce/PhysRevApplied.5.060001",
+      "checked_on": "2026-10-26",
+      "publication_date": "2017-02-24",
+      "publication_date_source": "https://api.crossref.org/works/10.1103%2FPhysRevApplied.7.024025"
+    }
   },
   {
     "number": 4,
@@ -440,7 +697,16 @@
       "source": "https://doi.org/10.1021/acs.jpcc.6b11445",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "4.509",
+      "year": 2015,
+      "basis": "publication-time",
+      "source": "https://catalogimages.wiley.com/images/db/pdf/9783527332687.excerpt.pdf",
+      "checked_on": "2026-10-26",
+      "publication_date": "2017-01-23",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facs.jpcc.6b11445"
+    }
   },
   {
     "number": 3,
@@ -456,7 +722,16 @@
       "source": "https://doi.org/10.1039/C6TA03659G",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "8.262",
+      "year": 2015,
+      "basis": "publication-time",
+      "source": "https://blogs.rsc.org/jm/2016/06/15/journal-of-materials-chemistry-a-b-and-c-2015-impact-factors/",
+      "checked_on": "2026-10-26",
+      "publication_date": "2016-06-27",
+      "publication_date_source": "https://pubs.rsc.org/en/content/articlelanding/2016/ta/c6ta03659g"
+    }
   },
   {
     "number": 2,
@@ -472,7 +747,16 @@
       "source": "https://doi.org/10.1021/acs.chemmater.5b03980",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "9.407",
+      "year": 2015,
+      "basis": "publication-time",
+      "source": "https://axial.acs.org/publishing/2015-journal-citation-reports",
+      "checked_on": "2026-10-26",
+      "publication_date": "2016-06-23",
+      "publication_date_source": "https://api.crossref.org/works/10.1021%2Facs.chemmater.5b03980"
+    }
   },
   {
     "number": 1,
@@ -488,6 +772,15 @@
       "source": "https://doi.org/10.1039/C5CP07932B",
       "kind": "graphical-abstract"
     },
-    "toc_status": "available"
+    "toc_status": "available",
+    "impact_factor": {
+      "value": "4.493",
+      "year": 2014,
+      "basis": "publication-time",
+      "source": "https://blogs.rsc.org/rscpublishing/2015/06/",
+      "checked_on": "2026-10-26",
+      "publication_date": "2016-02-10",
+      "publication_date_source": "https://pubs.rsc.org/en/content/articlelanding/2016/cp/c5cp07932b"
+    }
   }
 ]

@@ -42,7 +42,14 @@ assert sum(p['status'] == 'preparation' for p in pubs) == 0
 assert sum(bool(p['doi']) for p in pubs) == 30
 def check_journal(article, pub):
     journal = re.search(r'<p class="journal"[^>]*>(.*?)</p>', article)[1]
-    assert re.sub(r'<[^>]+>', '', journal) == escape(pub['journal']), pub['number']
+    badges = re.findall(r' <strong class="impact-factor" data-jif-year="(\d+)" title="([^"]+)">\[IF=([\d.]+)\]</strong>', journal)
+    metric = pub.get('impact_factor')
+    assert len(badges) == (1 if metric else 0), pub['number']
+    if metric:
+        assert badges[0][0] == str(metric['year']) and badges[0][2] == metric['value'], pub['number']
+        assert f"{metric['year']} JIF" in badges[0][1]
+    metadata = re.sub(r' <strong class="impact-factor".*?</strong>', '', journal)
+    assert re.sub(r'<[^>]+>', '', metadata) == escape(pub['journal']), pub['number']
     expected = [escape(pub['journal'].split(', ', 1)[0])] if pub['status'] in {'accepted', 'published'} else []
     assert re.findall(r'<em>(.*?)</em>', journal) == expected, pub['number']
 
@@ -130,3 +137,34 @@ for filename in ['publications.html', 'ko/publications.html']:
         assert ('has-toc' in article) == expected
         assert ('<figure class="publication-toc">' in article) == expected
 print('PASS: 23 graphical abstracts only, no fallback image columns, concise author-symbol legend.')
+
+from datetime import date
+releases = {2022: '2023-06-28', 2023: '2024-06-20', 2024: '2025-06-18', 2025: '2026-06-17'}
+assert sum('impact_factor' in p for p in pubs) == 33
+for pub in pubs:
+    metric = pub.get('impact_factor')
+    assert bool(metric) == (pub['status'] != 'submitted')
+    if not metric: continue
+    assert re.fullmatch(r'\d+\.\d{1,3}', metric['value']) and float(metric['value']) > 0
+    assert urlsplit(metric['source']).scheme == 'https'
+    if pub['status'] == 'accepted':
+        assert metric['basis'] == 'latest' and metric['year'] == 2025
+        assert 'publication_date' not in metric
+    else:
+        assert metric['basis'] == 'publication-time' and metric['publication_date_source']
+        published = metric['publication_date']
+        if re.fullmatch(r'\d{4}-\d{2}-\d{2}', published):
+            date.fromisoformat(published)
+            available = [year for year, released in releases.items() if released <= published]
+            if available: assert metric['year'] == max(available), pub['number']
+            if 'revision_released_on' in metric:
+                assert metric['revision_released_on'] <= published
+for filename in ['index.html', 'ko/index.html']:
+    for article in re.findall(r'<article class="publication(?: has-toc)?".*?</article>', (ROOT / filename).read_text()):
+        number = int(re.search(r'id="pub-(\d+)"', article)[1])
+        check_journal(article, next(p for p in pubs if p['number'] == number))
+for filename in ['publications.html', 'ko/publications.html']:
+    text = (ROOT / filename).read_text()
+    assert text.count('class="impact-factor"') == 33
+    assert text.count('class="caption impact-factor-note"') == 1
+print('PASS: 33 sourced JIFs; publication-time release boundaries; accepted/latest policy; bilingual and selected-publication consistency.')
