@@ -5,6 +5,7 @@ from urllib.parse import urlsplit, unquote
 import json, re
 from html import escape
 from collections import Counter
+from scripts.render_publications import format_impact_factor
 ROOT = Path(__file__).resolve().parent
 class Page(HTMLParser):
     def __init__(self, text):
@@ -52,7 +53,8 @@ def check_journal(article, pub):
     metric = pub.get('impact_factor')
     assert len(badges) == (1 if metric else 0), pub['number']
     if metric:
-        assert badges[0][0] == str(metric['year']) and badges[0][2] == metric['value'], pub['number']
+        assert badges[0][0] == str(metric['year']) and badges[0][2] == format_impact_factor(metric['value']), pub['number']
+        assert re.fullmatch(r'\d+\.\d', badges[0][2]), pub['number']
         assert f"{metric['year']} JIF" in badges[0][1]
         assert re.search(r' <strong class="impact-factor"[^>]*>\[IF=[\d.]+\]</strong>$', journal), pub['number']
     metadata = re.sub(r' <strong class="impact-factor".*?</strong>', '', journal)
@@ -143,7 +145,7 @@ for filename in ['publications.html', 'ko/publications.html']:
 print(f'PASS: {toc_count} graphical abstracts only, no fallback image columns, concise author-symbol legend.')
 
 from datetime import date
-releases = {2022: '2023-06-28', 2023: '2024-06-20', 2024: '2025-06-18', 2025: '2026-06-17'}
+releases = {2014: '2015-06-18', 2015: '2016-06-13', 2016: '2017-06-14', 2017: '2018-06-26', 2018: '2019-06-20', 2019: '2020-06-29', 2020: '2021-06-30', 2021: '2022-06-28', 2022: '2023-06-28', 2023: '2024-06-20', 2024: '2025-06-18', 2025: '2026-06-17'}
 metric_count = sum('impact_factor' in p for p in pubs)
 assert metric_count == counts['published'] + counts['accepted']
 for pub in pubs:

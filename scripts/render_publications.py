@@ -1,6 +1,7 @@
 """Generate publication fragments from JSON; --check detects unsaved generated HTML."""
 import argparse
 from collections import Counter
+from decimal import Decimal, ROUND_HALF_UP
 from html import escape, unescape
 import json
 from pathlib import Path
@@ -8,6 +9,10 @@ import re
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def format_impact_factor(value):
+    return str(Decimal(value).quantize(Decimal('0.1'), rounding=ROUND_HALF_UP))
 
 
 def render_pages():
@@ -31,7 +36,7 @@ def render_pages():
         if metric:
             basis = 'latest available, checked ' + metric['checked_on'] if metric['basis'] == 'latest' else 'latest available at publication (' + metric['publication_date'] + ')'
             title = escape(f"{metric['year']} JIF · {basis}", quote=True)
-            value += f' <strong class="impact-factor" data-jif-year="{metric["year"]}" title="{title}">[IF={escape(metric["value"])}]</strong>'
+            value += f' <strong class="impact-factor" data-jif-year="{metric["year"]}" title="{title}">[IF={format_impact_factor(metric["value"])}]</strong>'
         return f'<p class="journal" lang="en">{value}</p>'
 
     def article(pub, ko, compact=False):

@@ -5,6 +5,9 @@ import shutil
 import tempfile
 import render_publications as renderer
 
+for raw, displayed in [('4.536', '4.5'), ('4.484', '4.5'), ('21.875', '21.9'), ('22.0', '22.0'), ('8.928', '8.9'), ('8.95', '9.0')]:
+    assert renderer.format_impact_factor(raw) == displayed
+
 with tempfile.TemporaryDirectory() as directory:
     root = Path(directory)
     original = renderer.ROOT
