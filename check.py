@@ -48,6 +48,7 @@ def check_journal(article, pub):
     if metric:
         assert badges[0][0] == str(metric['year']) and badges[0][2] == metric['value'], pub['number']
         assert f"{metric['year']} JIF" in badges[0][1]
+        assert re.search(r' <strong class="impact-factor"[^>]*>\[IF=[\d.]+\]</strong>$', journal), pub['number']
     metadata = re.sub(r' <strong class="impact-factor".*?</strong>', '', journal)
     assert re.sub(r'<[^>]+>', '', metadata) == escape(pub['journal']), pub['number']
     expected = [escape(pub['journal'].split(', ', 1)[0])] if pub['status'] in {'accepted', 'published'} else []
