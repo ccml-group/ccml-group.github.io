@@ -85,3 +85,11 @@ html[lang=ko] [lang=en]{word-break:normal}
 @media(max-width:1000px){#navigation{gap:12px;font-size:13px}.nav-wrap{gap:14px}}
 @media(max-width:900px){.nav-wrap{gap:0}.language-switch{margin-left:auto;margin-right:18px}#navigation{order:4;margin:0;gap:12px 25px;font-size:14px}}
 @media(max-width:600px){.method-note{padding:24px 0 0;border-left:0;border-top:1px solid var(--line)}.pathway-grid,.methods-grid{grid-template-columns:1fr;gap:18px}.methods-grid{gap:12px}.pathway-card{padding:24px}.visual-research-card>.card-figure-caption{padding:14px 24px 0}.language-switch{gap:6px;margin-right:12px}.hero-lab-name{font-size:14px}.faq summary{font-size:16px}}
+
+/* Separate the journal name from year, volume and publication status. */
+.journal{margin-bottom:14px;line-height:1.5}
+.journal-name{display:block;font-size:22px;font-weight:700;line-height:1.35;letter-spacing:-.025em;color:#263e56}
+.journal-details{display:block;margin-top:5px;font-size:12px;font-weight:400;color:var(--muted)}
+#publication-list .publication h3{font-weight:600}
+.publication[data-status="submitted"] .journal-name{font-size:16px;font-weight:600;color:var(--muted)}
+@media(max-width:600px){.journal-name{font-size:20px}}

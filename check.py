@@ -35,16 +35,22 @@ for filename, page in pages.items():
 pubs = json.loads((ROOT / 'data/publications.json').read_text())
 assert len(pubs) == 36
 assert len({p['number'] for p in pubs}) == 36
-assert sum(p['status'] == 'submitted' for p in pubs) == 4
-assert sum(p['status'] == 'accepted' for p in pubs) == 2
+assert sum(p['status'] == 'submitted' for p in pubs) == 3
+assert sum(p['status'] == 'accepted' for p in pubs) == 3
 assert sum(p['status'] == 'published' for p in pubs) == 30
 assert sum(p['status'] == 'preparation' for p in pubs) == 0
 assert sum(bool(p['doi']) for p in pubs) == 30
+def check_journal(article, pub):
+    journal = re.search(r'<p class="journal"[^>]*>(.*?)</p>', article)[1]
+    parts = re.findall(r'<(?:strong|span) class="journal-(?:name|details)">(.*?)</(?:strong|span)>', journal)
+    assert len(parts) == 2 and ', '.join(parts) == escape(pub['journal']), pub['number']
+
 for p in pubs:
     assert pages['publications.html'].publications[f"pub-{p['number']}"] == (str(p['year']), p['status'])
     assert p['title'] and p['authors'] and p['journal']
     article = re.search(r'<article class="publication(?: has-toc)?" id="pub-' + str(p['number']) + r'".*?</article>', (ROOT / 'publications.html').read_text()).group()
-    assert all(escape(p[key]) in article for key in ('title', 'journal', 'doi'))
+    assert all(escape(p[key]) in article for key in ('title', 'doi'))
+    check_journal(article, p)
     authors = re.search(r'<p class="authors">(.*?)</p>', article)[1]
     assert re.sub(r'<[^>]+>', '', authors) == escape(p['authors'])
 print('PASS: 16 pages; local assets, links and anchors; 36 publication records and statuses.')
@@ -88,7 +94,8 @@ assert pages['ko/publications.html'].publications == pages['publications.html'].
 assert set(pages['ko/index.html'].publications) == set(pages['index.html'].publications)
 for pub in pubs:
     article = re.search(r'<article class="publication(?: has-toc)?" id="pub-' + str(pub['number']) + r'".*?</article>', ko_page)[0]
-    assert all(escape(pub[key]) in article for key in ('title', 'journal', 'doi'))
+    assert all(escape(pub[key]) in article for key in ('title', 'doi'))
+    check_journal(article, pub)
     authors = re.search(r'<p class="authors"[^>]*>(.*?)</p>', article)[1]
     assert re.sub(r'<[^>]+>', '', authors) == escape(pub['authors'])
     assert ('class="lead-author"' in article) == (pub['number'] in expected_lead)
@@ -99,3 +106,14 @@ assert '약 6개월의 참여를 권장' in (ROOT / 'ko/join.html').read_text()
 assert 'experience is not required' in (ROOT / 'join.html').read_text()
 assert 'recommend around six months' in (ROOT / 'join.html').read_text()
 print('PASS: reciprocal language links, bilingual addresses and recruitment; publication metadata and authorship preserved.')
+
+rank = {'accepted': 0, 'published': 1, 'submitted': 2, 'preparation': 3}
+expected_order = [f"pub-{p['number']}" for p in pubs]
+assert [rank[p['status']] for p in pubs] == sorted(rank[p['status']] for p in pubs)
+assert expected_order[0] == 'pub-34'
+assert next(p for p in pubs if p['number'] == 34)['journal'] == 'Advanced Energy Materials, 2026, Accepted'
+for name in ['publications.html', 'ko/publications.html']:
+    assert list(pages[name].publications) == expected_order, name
+assert '30 published articles, 3 accepted and 3 submitted manuscripts' in page
+assert '게재 논문 30건 · 게재 확정 3건 · 투고 중 3건' in ko_page
+print('PASS: AEM acceptance, journal details and accepted/published/submitted order in both languages.')
