@@ -19,7 +19,6 @@
 .citation-track{height:100px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;border-bottom:1px solid var(--line)}
 .citation-bar{display:block;flex-shrink:0;width:60%;max-width:24px;background:#617d90;border-radius:2px 2px 0 0}
 .citation-chart strong{font-size:10px;line-height:12px;font-weight:400;color:var(--muted);margin-bottom:3px}
-.chart-footnote{font-size:11px;color:var(--muted);margin:8px 0 0}
 @media(max-width:800px){.scholar-panel--publications{grid-template-columns:1fr;gap:18px}.citation-chart{max-width:100%}}
 
 /* Scientific composites: preserve source-panel proportions. */
