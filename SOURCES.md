@@ -54,3 +54,8 @@ The earlier two first-page preview assets have been replaced by standalone offic
 
 ## Publication status — 2026-10-26
 저자 확인에 따라 34번 Zwitterionic Thermoplastic Polyurethane-Based Quasi-Solid Polymer Electrolytes for Lithium Metal Batteries with Machine-Learning-Assisted Mechanistic Insights를 Advanced Energy Materials 게재 확정(Accepted)으로 변경했습니다. DOI·권·페이지는 확인되지 않아 추가하지 않았습니다. 기존 번호와 앵커는 유지하며, 투고 중 원고 → 게재 확정 → 출판 논문 순으로 표시합니다. 전체 36건은 게재 완료 30건, 게재 확정 3건, 투고 중 3건입니다.
+
+
+### 2026-10-26 · User-confirmed submitted manuscript
+
+Added work 37, “Surface Charge Transition Levels and Hole Localization of Dopants in BiVO₄(010) Photoanodes,” as Submitted (2026). Full authors supplied by the PI: Changkyu Cho; Kyunhun Lee; Yonghyuk Lee*; Taehun Lee*. Displayed in the existing initials style as C. Cho, K. Lee, Y. Lee*, and T. Lee*, with Y. Lee* underlined as corresponding author. No journal, DOI, IF or graphical abstract was supplied. The list now has 37 works (30 published, 3 accepted, 4 submitted); 2026 has 13 works (6 published, 3 accepted, 4 submitted).

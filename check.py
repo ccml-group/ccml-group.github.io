@@ -33,9 +33,9 @@ for filename, page in pages.items():
         if url.fragment and target in pages:
             assert unquote(url.fragment) in pages[target].ids, (filename, link)
 pubs = json.loads((ROOT / 'data/publications.json').read_text())
-assert len(pubs) == 36
-assert len({p['number'] for p in pubs}) == 36
-assert sum(p['status'] == 'submitted' for p in pubs) == 3
+assert len(pubs) == 37
+assert len({p['number'] for p in pubs}) == 37
+assert sum(p['status'] == 'submitted' for p in pubs) == 4
 assert sum(p['status'] == 'accepted' for p in pubs) == 3
 assert sum(p['status'] == 'published' for p in pubs) == 30
 assert sum(p['status'] == 'preparation' for p in pubs) == 0
@@ -62,7 +62,7 @@ for p in pubs:
     check_journal(article, p)
     authors = re.search(r'<p class="authors">(.*?)</p>', article)[1]
     assert re.sub(r'<[^>]+>', '', authors) == escape(p['authors'])
-print('PASS: 16 pages; local assets, links and anchors; 36 publication records and statuses.')
+print('PASS: 16 pages; local assets, links and anchors; 37 publication records and statuses.')
 
 assert set(pages['index.html'].publications) == {'pub-27', 'pub-20', 'pub-18', 'pub-17'}
 news = (ROOT / 'news.html').read_text()
@@ -86,7 +86,7 @@ assert not re.search(r'<a[^>]*class="publication-toc', page)
 for figure in re.findall(r'<figure class="publication-toc">.*?</figure>', page):
     assert '<a ' not in figure
 
-expected_lead = {2, 3, 7, 11, 15, 17, 18, 20, 21, 22, 23, 26, 27, 28, 29, 31, 32, 33, 34}
+expected_lead = {2, 3, 7, 11, 15, 17, 18, 20, 21, 22, 23, 26, 27, 28, 29, 31, 32, 33, 34, 37}
 for article in re.findall(r'<article class="publication(?: has-toc)?".*?</article>', page):
     number = int(re.search(r'id="pub-(\d+)"', article)[1])
     assert ('class="lead-author"' in article) == (number in expected_lead)
@@ -121,12 +121,12 @@ print('PASS: reciprocal language links, bilingual addresses and recruitment; pub
 rank = {'submitted': 0, 'accepted': 1, 'published': 2, 'preparation': 3}
 expected_order = [f"pub-{p['number']}" for p in pubs]
 assert [rank[p['status']] for p in pubs] == sorted(rank[p['status']] for p in pubs)
-assert expected_order[0] == 'pub-36'
+assert expected_order[0] == 'pub-37'
 assert next(p for p in pubs if p['number'] == 34)['journal'] == 'Advanced Energy Materials, 2026, Accepted'
 for name in ['publications.html', 'ko/publications.html']:
     assert list(pages[name].publications) == expected_order, name
-assert '30 published articles, 3 accepted and 3 submitted manuscripts' in page
-assert '게재 논문 30건 · 게재 확정 3건 · 투고 중 3건' in ko_page
+assert '30 published articles, 3 accepted and 4 submitted manuscripts' in page
+assert '게재 논문 30건 · 게재 확정 3건 · 투고 중 4건' in ko_page
 print('PASS: AEM acceptance, journal details and submitted/accepted/published order in both languages.')
 
 for filename in ['publications.html', 'ko/publications.html']:
@@ -185,5 +185,5 @@ for filename in ['publications.html', 'ko/publications.html']:
         assert f'<span class="publication-year-count">({len(articles)})</span>' in group
         assert f'aria-labelledby="publications-{year}"' in group
         assert 'class="caption publication-year-summary"' in group
-    assert sum(year_counts.values()) == 36
+    assert sum(year_counts.values()) == 37
 print('PASS: descending annual sections, accurate counts, stable publication IDs and corrected 2018 metadata.')
