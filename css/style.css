@@ -123,3 +123,31 @@ html[lang=ko] [lang=en]{word-break:normal}
 .related-publications{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin-top:22px}
 .related-publications a{font-size:13px;line-height:1.6;text-decoration:underline;text-underline-offset:3px;color:#345b72;border-bottom:0;padding-bottom:0}
 @media(max-width:600px){.hero-home{padding:34px 0 30px}.hero-home h1{font-size:36px}.hero-metrics{gap:8px 16px}.hero-metrics .scholar-values{gap:14px}}
+
+/* Topic shortcuts and inquiry paths support the existing reading flow. */
+.research-shortcuts{display:flex;flex-wrap:wrap;gap:8px 24px;margin:26px 0 0}
+.research-shortcuts a{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-size:14px;color:#345b72;border-bottom:1px solid var(--line)}
+.research-shortcuts span{font:12px/1.5 ui-monospace,monospace;color:var(--accent)}
+.page-actions{margin-top:22px}
+.page-actions .text-link{display:inline-flex;align-items:center;min-height:44px}
+#inquiry,#inquiries{scroll-margin-top:100px}
+.pathway-card .pathway-link{margin-top:16px;font-size:13px}
+.pathway-link .text-link{font-size:13px;line-height:1.7}
+.publication .publication-summary{font-size:14px;line-height:1.75;color:var(--muted);margin:12px 0 0;max-width:760px}
+.related-publications .related-publications-label{font-size:11px;line-height:1.6;margin:0;color:var(--muted)}
+.collaboration-note{padding-top:22px;padding-bottom:26px;text-align:right}
+.map-note{margin-top:14px!important;font-size:12px!important;line-height:1.7!important}
+@media(max-width:600px){.research-shortcuts{gap:6px 18px}.research-shortcuts a{font-size:13px}.collaboration-note{text-align:left}}
+
+/* Members may contribute to several projects; list current topics without fixing a single specialization. */
+.member-research{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.member-card .member-research-label{font-size:11px;font-weight:600;color:#354d5e;margin:0 0 10px}
+.member-topics{list-style:none;margin:0;padding:0;font-size:13px;line-height:1.75;color:var(--muted)}
+.member-topics li+li{margin-top:12px}
+
+.member-grid--graduate{grid-template-columns:minmax(0,620px)}
+.member-card--graduate{display:grid;grid-template-columns:112px minmax(0,1fr);column-gap:24px;align-items:start}
+.member-card--graduate .member-portrait{grid-column:1;grid-row:1/5;margin:0}
+.member-card--graduate>h3,.member-card--graduate>.member-name,.member-card--graduate>.member-role,.member-card--graduate>.member-research{grid-column:2}
+@media(max-width:1050px){.member-grid:not(.member-grid--graduate){grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.member-card--graduate{display:block}.member-card--graduate .member-portrait{margin-bottom:23px}}

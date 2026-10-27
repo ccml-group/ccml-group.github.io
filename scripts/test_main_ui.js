@@ -37,10 +37,10 @@ function render(lang, withFilters = true) {
   const count = node();
   const empty = node({hidden: true});
   const rows = [
-    ['gold', '2026', 'published', 'Gold surfaces — A. Author — Journal of Chemistry'],
-    ['titanium', '2026', 'accepted', 'Titanium oxide — B. Author — Materials Letters'],
-    ['bismuth', '2026', 'submitted', 'Bismuth photoanodes — C. Author — Manuscript'],
-    ['water', '2025', 'published', 'Water interfaces — D. Author — Journal of Chemistry']
+    ['gold', '2026', 'published', 'Gold and WO₃ surfaces — A. Author — Journal of Chemistry'],
+    ['titanium', '2026', 'accepted', 'Titanium oxide TiO₂ — B. Author — Materials Letters'],
+    ['bismuth', '2026', 'submitted', 'Bismuth photoanodes BiVO₄ — C. Author — Manuscript'],
+    ['water', '2025', 'published', 'Water interfaces on IrO₂ — D. Author — Journal of Chemistry']
   ].map(([id, year, status, textContent]) => node({id, dataset: {year, status}, textContent}));
   const sections = ['2026', '2025'].map(year => {
     const yearCount = node();
@@ -118,6 +118,17 @@ for (const lang of ['en', 'ko']) {
   assert.deepEqual(ui.visible(), ['gold', 'water']);
   assert.equal(ui.empty.hidden, true);
   assert.equal(ui.sections.every(section => !section.hidden && section.summary.hidden), true);
+
+  for (const [query, expected] of [['TiO2', 'titanium'], ['TiO₂', 'titanium'], ['ＴｉＯ２', 'titanium'], ['BiVO4', 'bismuth'], ['WO3', 'gold'], ['IrO2', 'water']]) {
+    ui.search.value = query;
+    ui.filters.dispatch('input');
+    assert.deepEqual(ui.visible(), [expected], `${lang}: ${query}`);
+  }
+  ui.year.value = '2026';
+  ui.search.value = 'IrO2';
+  ui.filters.dispatch('change');
+  assert.deepEqual(ui.visible(), []);
+  ui.year.value = 'all';
 
   ui.search.value = '';
   ui.filters.dispatch('input');

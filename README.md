@@ -8,7 +8,7 @@
 
 - 문구와 메뉴·푸터는 각 HTML에서 변경합니다. 공통 내용은 한국어·영어 페이지에 함께 반영합니다.
 - 공통 디자인은 `css/style.css`, 메뉴·언어 전환·논문 검색은 `js/main.js`에 있습니다.
-- 논문 정보는 `data/publications.json`에서 수정한 뒤 `python3 scripts/render_publications.py`를 실행합니다. 한영 목록·연도별 편수·필터 연도·홈 대표논문에 함께 반영됩니다. 주저자로 표시할 PI는 `pi_lead_author: true`로 지정합니다.
+- 논문 정보는 `data/publications.json`에서 수정한 뒤 `python3 scripts/render_publications.py`를 실행합니다. 한영 목록·연도별 편수·필터 연도·홈 대표논문에 함께 반영됩니다. 주저자로 표시할 PI는 `pi_lead_author: true`로 지정합니다. 메인 대표논문의 기여 요약은 해당 논문의 `summary_en`, `summary_ko`에 한 문장씩 작성합니다.
 - 대표논문 4편은 `data/selected-publications.json`의 번호로 선택합니다. IF는 검증한 기준연도·원래 수치·출처를 기록하며 자동 조회하지 않습니다. 화면에만 소수점 첫째 자리로 반올림하고, 대표연구의 IF ≥ 9 기준은 반올림 전 수치를 사용합니다. 검증 근거는 [IMPACT-FACTORS.md](IMPACT-FACTORS.md)에 있습니다.
 - 인용 통계는 `data/scholar.js`에서 읽고, `js/scholar.js`가 언어별로 표시합니다. 주간 자동 갱신 설정은 [AUTO-UPDATE.md](AUTO-UPDATE.md)에 있습니다.
 - 논문 목록에는 graphical abstract만 표시합니다. 없는 항목은 텍스트만 표시하며 Figure 1이나 다른 그림으로 대체하지 않습니다.
@@ -43,3 +43,9 @@ node scripts/test_main_ui.js
 ```sh
 python3 -m http.server 8767 --bind 127.0.0.1
 ```
+
+## 연구·구성원 안내
+
+연구 페이지의 네 주제 바로가기와 관련 대표논문, 공동연구 연락처를 연결했습니다. 메인 대표논문 네 편에는 한영 연구 기여 요약을 표시합니다. 논문 검색은 일반 숫자와 유니코드 아래첨자를 동일하게 처리합니다.
+
+구성원 페이지에는 사용자 확인 내용을 바탕으로 각 학생의 여러 참여 연구를 한영으로 정리했습니다. 연구 주제는 특정 전공 하나로 고정하거나 완료된 성과로 표현하지 않습니다. 참여 안내의 대학원 모집요강과 방문 안내의 캠퍼스맵은 학교 공식 페이지로 연결됩니다.

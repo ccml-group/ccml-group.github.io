@@ -50,6 +50,9 @@ def render_pages():
         if pub['doi']:
             title = f'<a href="{escape(pub["doi"], quote=True)}">{title} ↗</a>'
         content += journal(pub) + ('<h3 lang="en">' if ko else '<h3>') + title + '</h3>'
+        if compact and pub.get('summary_ko' if ko else 'summary_en'):
+            summary = escape(pub['summary_ko' if ko else 'summary_en'])
+            content += f'<p class="publication-summary">{summary}</p>'
         if not compact:
             authors = escape(pub['authors'])
             if pub.get('pi_lead_author'):

@@ -29,10 +29,10 @@ if (filters) {
   const status = document.querySelector('#pub-status');
   const publications = Array.from(document.querySelectorAll('.publication'));
   function filterPublications() {
-    const query = search.value.trim().toLocaleLowerCase();
+    const query = search.value.normalize('NFKC').trim().toLocaleLowerCase();
     let count = 0;
     publications.forEach(publication => {
-      const matches = publication.textContent.toLocaleLowerCase().includes(query)
+      const matches = publication.textContent.normalize('NFKC').toLocaleLowerCase().includes(query)
         && (year.value === 'all' || publication.dataset.year === year.value)
         && (status.value === 'all' || publication.dataset.status === status.value);
       publication.hidden = !matches;

@@ -16,9 +16,19 @@ with tempfile.TemporaryDirectory() as directory:
         shutil.copyfile(original / name, root / name)
     renderer.ROOT = root
     data = json.loads((root / 'data/publications.json').read_text())
+    selected = json.loads((root / 'data/selected-publications.json').read_text())
+    summary_pub = next(pub for pub in data if pub['number'] == selected[0])
+    summary_pub['summary_en'] = 'Structure <surface> & function.'
+    summary_pub['summary_ko'] = '구조 <표면> & 기능.'
     data.append({'number': 38, 'journal': 'Manuscript, 2027, Submitted', 'authors': 'A. Student, Y. Lee*', 'title': 'Test <surface> & interface', 'doi': '', 'year': 2027, 'status': 'submitted', 'pi_lead_author': True})
     (root / 'data/publications.json').write_text(json.dumps(data))
     results = renderer.render_pages()
+    for ko in [False, True]:
+        home = results[root / ('ko/index.html' if ko else 'index.html')]
+        summary = '구조 &lt;표면&gt; &amp; 기능.' if ko else 'Structure &lt;surface&gt; &amp; function.'
+        assert f'<p class="publication-summary">{summary}</p>' in home
+        assert home.count('class="publication-summary"') == 4
+        assert 'class="publication-summary"' not in results[root / ('ko/publications.html' if ko else 'publications.html')]
     for filename in ['publications.html', 'ko/publications.html']:
         text = results[root / filename]
         assert text.index('id="pub-38"') < text.index('id="pub-37"')

@@ -227,3 +227,23 @@ for filename in ['publications.html', 'ko/publications.html']:
     for figure in re.findall(r'<figure class="publication-toc">.*?</figure>', (ROOT / filename).read_text()):
         assert re.search(r'width="\d+" height="\d+"', figure)
 print('PASS: shared previews, responsive image sources/dimensions, unique figure links and eight related-paper links.')
+
+for prefix in ['', 'ko/']:
+    research = (ROOT / prefix / 'research.html').read_text()
+    shortcuts = re.search(r'<nav class="research-shortcuts".*?</nav>', research)[0]
+    assert re.findall(r'href="#([^"]+)"', shortcuts) == ['ai', 'interfaces', 'catalysis', 'materials']
+    assert research.count('href="contact.html#inquiries"') == 1
+    home = (ROOT / prefix / 'index.html').read_text()
+    assert home.count('class="publication-summary"') == 4
+    for number in selected:
+        pub = next(pub for pub in pubs if pub['number'] == number)
+        assert escape(pub['summary_ko' if prefix else 'summary_en']) in home
+    join = (ROOT / prefix / 'join.html').read_text()
+    assert 'href="#inquiry"' in join and 'id="inquiry"' in join
+    assert 'https://gs.dongguk.edu/enter/guide/list' in join
+    for name in ['join.html', 'contact.html']:
+        text = (ROOT / prefix / name).read_text()
+        assert 'https://www.dongguk.edu/campus/map/seoul' in text
+        assert 'Dongguk+University+Seoul' not in text
+    assert 'Fe4N' not in research and 'Fe₄N' not in research
+print('PASS: bilingual research shortcuts, inquiry/admissions paths, official map and four selected-paper summaries.')

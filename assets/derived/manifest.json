@@ -38,7 +38,7 @@
     "assets/research/functional-materials-scientific.png": {
       "width": 1600,
       "height": 1600,
-      "source_sha256": "1256fd235eb2576ea1b1039c3271579742f87c3b0455c73e90a02bdb2f5bbab7",
+      "source_sha256": "8d9b4db729360c227af5818ea921d95ee56c134954ab89a8a563571688339b72",
       "variants": [
         {
           "path": "assets/derived/research/functional-materials-scientific-640.webp",
