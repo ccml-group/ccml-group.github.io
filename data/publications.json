@@ -61,21 +61,29 @@
   },
   {
     "number": 32,
-    "journal": "ACS Nano, 2026, Accepted",
-    "authors": "M. Vaidulych†, Y. Lee†, F. Loi, P. Vitek, M. Vorochta, S. Valtera, I. Khalakhan, C. De Melo Sanchez, S. Chakraborty, K. Simkovičová, Y. Garreau, B. Voisin, J. Rodriguez-Pereira, J. Macak, M. Bunian, M. Jang, Y. Lei, P. Sautet, I. Matolinová, A. Coati, P. Andreazza, A. N. Alexandrova, and S. Vajda",
-    "title": "Oxygen-Promoted Dehydrogenation on Size-Selected Cu-Pd Pentamer Clusters for Low-Temperature Hydrogen Release from Cyclic Hydrocarbons",
-    "doi": "",
+    "journal": "ACS Nano, 2026, ASAP",
+    "authors": "M. Vaidulych*†, Y. Lee†, F. Loi, P. Vitek, M. Vorochta, S. Valtera, I. Khalakhan, C. de Melo, S. Chakraborty, K. Simkovičová, Y. Garreau, B. Voisin, B. Bawab, J. M. Macak, M. Bunian, M.-H. Jang, Y. Lei, P. Sautet, I. Matolinová, A. Coati, P. Andreazza, A. N. Alexandrova*, and S. Vajda*",
+    "title": "Oxygen-Promoted Dehydrogenation on Size-Selected Cu–Pd Pentamer Clusters for Low-Temperature Hydrogen Release from Cyclic Hydrocarbons",
+    "doi": "https://doi.org/10.1021/acsnano.6c12121",
     "year": 2026,
-    "status": "accepted",
-    "toc_status": "awaiting-publication",
+    "status": "published",
+    "toc_status": "available",
     "impact_factor": {
       "value": "17.3",
       "year": 2025,
-      "basis": "latest",
+      "basis": "publication-time",
       "source": "https://pubs.acs.org/ancac3/pages/about",
-      "checked_on": "2026-10-26"
+      "checked_on": "2026-10-26",
+      "publication_date": "2026-10-27",
+      "publication_date_source": "https://doi.org/10.1021/acsnano.6c12121"
     },
-    "pi_lead_author": true
+    "pi_lead_author": true,
+    "toc": {
+      "image": "assets/toc/publication-32.png",
+      "alt": "Graphical abstract: oxygen-assisted dehydrogenation on Cu–Pd pentamer clusters supported on ZrO₂ for selective hydrogen release.",
+      "source": "https://doi.org/10.1021/acsnano.6c12121",
+      "kind": "graphical-abstract"
+    }
   },
   {
     "number": 31,
