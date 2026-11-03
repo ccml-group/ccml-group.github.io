@@ -43,21 +43,29 @@
   },
   {
     "number": 34,
-    "journal": "Advanced Energy Materials, 2026, Accepted",
+    "journal": "Advanced Energy Materials, 2026, e71793",
     "authors": "H. Na, K. Nam, Y. Lee*, and S.-K. Kim*",
-    "title": "Zwitterionic Thermoplastic Polyurethane-Based Quasi-Solid Polymer Electrolytes for Lithium Metal Batteries with Machine-Learning-Assisted Mechanistic Insights",
-    "doi": "",
+    "title": "Zwitterionic Thermoplastic Polyurethane-Based Quasi-Solid Polymer Electrolytes for Lithium Metal Batteries With Machine-Learning-Assisted Mechanistic Insights",
+    "doi": "https://doi.org/10.1002/aenm.71793",
     "year": 2026,
-    "status": "accepted",
-    "toc_status": "awaiting-publication",
+    "status": "published",
+    "toc_status": "available",
     "impact_factor": {
       "value": "25.5",
       "year": 2025,
-      "basis": "latest",
+      "basis": "publication-time",
       "source": "https://www.niic.nsc.ru/phocadownload/publications/2025/JCR_JournalImpactFactor_2026.pdf#page=4",
-      "checked_on": "2026-10-26"
+      "checked_on": "2026-10-26",
+      "publication_date": "2026-11-02",
+      "publication_date_source": "https://doi.org/10.1002/aenm.71793"
     },
-    "pi_lead_author": true
+    "pi_lead_author": true,
+    "toc": {
+      "image": "assets/toc/publication-34.jpg",
+      "alt": "Graphical abstract: dual-site ion regulation in zwitterionic thermoplastic polyurethane electrolytes, combining lithium coordination and TFSI anion regulation.",
+      "source": "https://doi.org/10.1002/aenm.71793",
+      "kind": "graphical-abstract"
+    }
   },
   {
     "number": 32,

@@ -69,6 +69,18 @@
         }
       ]
     },
+    "assets/toc/publication-34.jpg": {
+      "width": 1640,
+      "height": 300,
+      "source_sha256": "0a472bdafd3d60639b5d5e4a4bcc2cd0e375472637cebce4a4ef43cd31364e5e",
+      "variants": [
+        {
+          "path": "assets/derived/toc/publication-34-480.webp",
+          "width": 480,
+          "height": 88
+        }
+      ]
+    },
     "assets/toc/publication-32.png": {
       "width": 520,
       "height": 283,
