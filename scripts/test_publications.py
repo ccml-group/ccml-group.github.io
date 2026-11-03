@@ -20,7 +20,11 @@ with tempfile.TemporaryDirectory() as directory:
     summary_pub = next(pub for pub in data if pub['number'] == selected[0])
     summary_pub['summary_en'] = 'Structure <surface> & function.'
     summary_pub['summary_ko'] = '구조 <표면> & 기능.'
-    data.append({'number': 38, 'journal': 'Manuscript, 2027, Submitted', 'authors': 'A. Student, Y. Lee*', 'title': 'Test <surface> & interface', 'doi': '', 'year': 2027, 'status': 'submitted', 'pi_lead_author': True})
+    previous_number = max(pub['number'] for pub in data)
+    new_number = previous_number + 1
+    new_year = max(pub['year'] for pub in data) + 1
+    new_count = len(data) + 1
+    data.append({'number': new_number, 'journal': f'Manuscript, {new_year}, Submitted', 'authors': 'A. Student, Y. Lee*', 'title': 'Test <surface> & interface', 'doi': '', 'year': new_year, 'status': 'submitted', 'pi_lead_author': True})
     (root / 'data/publications.json').write_text(json.dumps(data))
     results = renderer.render_pages()
     for ko in [False, True]:
@@ -31,12 +35,12 @@ with tempfile.TemporaryDirectory() as directory:
         assert 'class="publication-summary"' not in results[root / ('ko/publications.html' if ko else 'publications.html')]
     for filename in ['publications.html', 'ko/publications.html']:
         text = results[root / filename]
-        assert text.index('id="pub-38"') < text.index('id="pub-37"')
-        assert '2027 <span class="publication-year-count">(1)</span>' in text
+        assert text.index(f'id="pub-{new_number}"') < text.index(f'id="pub-{previous_number}"')
+        assert f'{new_year} <span class="publication-year-count">(1)</span>' in text
         assert 'Test &lt;surface&gt; &amp; interface' in text
         assert '<strong class="lead-author">Y. Lee*</strong>' in text
-        assert ('전체 38건' if filename.startswith('ko/') else '38 listed works') in text
-        article = text.split('id="pub-38"', 1)[1].split('</article>', 1)[0]
+        assert (f'전체 {new_count}건' if filename.startswith('ko/') else f'{new_count} listed works') in text
+        article = text.split(f'id="pub-{new_number}"', 1)[1].split('</article>', 1)[0]
         assert 'impact-factor' not in article and 'publication-toc' not in article
     data.append(data[-1])
     (root / 'data/publications.json').write_text(json.dumps(data))
