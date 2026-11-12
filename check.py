@@ -73,8 +73,14 @@ for p in pubs:
 print(f'PASS: 16 pages; local assets, links and anchors; {len(pubs)} publication records and statuses.')
 
 assert set(pages['index.html'].publications) == {f'pub-{n}' for n in selected}
-news = (ROOT / 'news.html').read_text()
-assert news.count('class="news-row"') == 1 and 'Open call' in news
+for filename in ['news.html', 'ko/news.html']:
+    news = (ROOT / filename).read_text()
+    rows = re.findall(r'<article class="news-row(?: news-row--pinned)?"[^>]*>', news)
+    dates = re.findall(r'<time datetime="([\d-]+)">', news)
+    assert len(rows) == 6 and 'news-row--pinned' in rows[0]
+    assert news.count('news-row--pinned') == 1
+    assert len(dates) == 5 and dates == sorted(dates, reverse=True)
+    assert ('Open call' if filename == 'news.html' else '상시 모집') in news
 for p in pubs:
     if 'toc' in p:
         assert p['status'] == 'published'
