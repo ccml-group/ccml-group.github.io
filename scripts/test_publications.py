@@ -1,5 +1,6 @@
 """Check adding a manuscript updates both languages without editing site files."""
 import json
+import re
 from pathlib import Path
 import shutil
 import tempfile
@@ -42,6 +43,12 @@ with tempfile.TemporaryDirectory() as directory:
         assert (f'전체 {new_count}건' if filename.startswith('ko/') else f'{new_count} listed works') in text
         article = text.split(f'id="pub-{new_number}"', 1)[1].split('</article>', 1)[0]
         assert 'impact-factor' not in article and 'publication-toc' not in article
+        numbered = re.findall(r'<article[^>]*id="(pub-\d+)"[^>]*><span class="pub-number">(\d+)</span>', text)
+        assert [int(label) for _, label in numbered] == list(range(new_count, 0, -1))
+        display_numbers = dict(numbered)
+        home = results[root / ('ko/index.html' if filename.startswith('ko/') else 'index.html')]
+        for pub_id, label in re.findall(r'<article[^>]*id="(pub-\d+)"[^>]*><span class="pub-number">(\d+)</span>', home):
+            assert label == display_numbers[pub_id]
     data.append(data[-1])
     (root / 'data/publications.json').write_text(json.dumps(data))
     try:

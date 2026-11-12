@@ -26,6 +26,8 @@ def render_pages():
         assert pub['status'] in {'published', 'accepted', 'submitted'}
         assert isinstance(pub['year'], int) and pub['title'] and pub['authors']
         assert not pub['doi'] or urlsplit(pub['doi']).scheme == 'https'
+    ordered = sorted(pubs, key=lambda p: (-p['year'], {'submitted': 0, 'accepted': 1, 'published': 2}[p['status']], -p['number']))
+    display_numbers = {pub['number']: len(pubs) - index for index, pub in enumerate(ordered)}
 
     def journal(pub):
         value = escape(pub['journal'])
@@ -43,7 +45,7 @@ def render_pages():
         toc = pub.get('toc') if not compact else None
         number = pub['number']
         state = {'published': '게재 완료', 'accepted': '게재 확정', 'submitted': '투고 중'}[pub['status']]
-        content = f'<article class="publication{" has-toc" if toc else ""}" id="pub-{number}" data-year="{pub["year"]}" data-status="{pub["status"]}"><span class="pub-number">{number:02d}</span><div>'
+        content = f'<article class="publication{" has-toc" if toc else ""}" id="pub-{number}" data-year="{pub["year"]}" data-status="{pub["status"]}"><span class="pub-number">{display_numbers[number]:02d}</span><div>'
         if ko and not compact:
             content += f'<p class="pub-state">{state}</p>'
         title = escape(pub['title'])
@@ -75,7 +77,7 @@ def render_pages():
         text = path.read_text()
         sections = []
         for year in sorted({p['year'] for p in pubs}, reverse=True):
-            group = sorted((p for p in pubs if p['year'] == year), key=lambda p: ({'submitted': 0, 'accepted': 1, 'published': 2}[p['status']], -p['number']))
+            group = [p for p in ordered if p['year'] == year]
             counts = Counter(p['status'] for p in group)
             labels = {'published': '게재', 'accepted': '게재 확정', 'submitted': '투고 중'} if ko else {'published': 'published', 'accepted': 'accepted', 'submitted': 'submitted'}
             summary = ' · '.join(f'{label} {counts[state]}편' if ko else f'{counts[state]} {label}' for state, label in labels.items() if counts[state]) if counts['accepted'] + counts['submitted'] else ''
