@@ -1,7 +1,7 @@
 window.CCML_SCHOLAR = {
   "author_id": "iqaMS78AAAAJ",
-  "updated_at": "2026-11-16T01:35:29+00:00",
-  "citations": 1177,
+  "updated_at": "2026-11-23T07:39:43+00:00",
+  "citations": 1184,
   "h_index": 15,
   "i10_index": 18,
   "graph": [
@@ -35,15 +35,15 @@ window.CCML_SCHOLAR = {
     },
     {
       "year": 2024,
-      "citations": 111
+      "citations": 110
     },
     {
       "year": 2025,
-      "citations": 216
+      "citations": 217
     },
     {
       "year": 2026,
-      "citations": 430
+      "citations": 435
     }
   ]
 };
