@@ -224,15 +224,17 @@ for filename in ['research.html', 'ko/research.html']:
     figures = re.findall(r'<figure class="research-art">.*?</figure>', text)
     assert len(figures) == 4 and all(figure.count('<a ') == 1 for figure in figures)
     assert len(set(re.findall(r'aria-label="([^"]+)"', ''.join(figures)))) == 4
-    assert len(re.findall(r'href="publications.html#pub-\d+"', text)) == 8
     linked_numbers = [int(n) for n in re.findall(r'href="publications.html#pub-(\d+)"', text)]
+    assert len(linked_numbers) == 7
+    materials = re.search(r'<section[^>]+id="materials">.*?</section>', text)[0]
+    assert re.findall(r'href="publications.html#pub-(\d+)"', materials) == ['34']
     for number in linked_numbers + selected:
         pub = next(p for p in pubs if p['number'] == number)
         assert float(pub.get('impact_factor', {}).get('value', 0)) >= 9, f'Representative paper {number}: IF must be at least 9'
 for filename in ['publications.html', 'ko/publications.html']:
     for figure in re.findall(r'<figure class="publication-toc">.*?</figure>', (ROOT / filename).read_text()):
         assert re.search(r'width="\d+" height="\d+"', figure)
-print('PASS: shared previews, responsive image sources/dimensions, unique figure links and eight related-paper links.')
+print('PASS: responsive research figures, unique full-size links and seven related-paper links.')
 
 for prefix in ['', 'ko/']:
     research = (ROOT / prefix / 'research.html').read_text()

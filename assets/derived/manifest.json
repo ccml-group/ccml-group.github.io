@@ -35,23 +35,6 @@
         }
       ]
     },
-    "assets/research/functional-materials-scientific.png": {
-      "width": 1600,
-      "height": 1600,
-      "source_sha256": "8d9b4db729360c227af5818ea921d95ee56c134954ab89a8a563571688339b72",
-      "variants": [
-        {
-          "path": "assets/derived/research/functional-materials-scientific-640.webp",
-          "width": 640,
-          "height": 640
-        },
-        {
-          "path": "assets/derived/research/functional-materials-scientific-960.webp",
-          "width": 960,
-          "height": 960
-        }
-      ]
-    },
     "assets/research/machine-learning-scientific.png": {
       "width": 1600,
       "height": 1600,
@@ -366,6 +349,23 @@
           "path": "assets/derived/toc/publication-1-480.webp",
           "width": 480,
           "height": 382
+        }
+      ]
+    },
+    "assets/research/data-driven-design-scientific.png": {
+      "width": 1600,
+      "height": 1600,
+      "source_sha256": "4de4e0a8068ef31ad561986ebe8c2c4a6bd84d9262ebc6d488a4c362f074a272",
+      "variants": [
+        {
+          "path": "assets/derived/research/data-driven-design-scientific-640.webp",
+          "width": 640,
+          "height": 640
+        },
+        {
+          "path": "assets/derived/research/data-driven-design-scientific-960.webp",
+          "width": 960,
+          "height": 960
         }
       ]
     }
