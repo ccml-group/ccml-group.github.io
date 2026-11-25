@@ -132,13 +132,13 @@ assert 'experience is not required' in (ROOT / 'join.html').read_text()
 assert 'recommend around six months' in (ROOT / 'join.html').read_text()
 print('PASS: reciprocal language links, bilingual addresses and recruitment; publication metadata and authorship preserved.')
 
-rank = {'accepted': 0, 'submitted': 1, 'published': 2}
+rank = {'submitted': 0, 'accepted': 1, 'published': 2}
 expected_order = [f"pub-{p['number']}" for p in sorted(pubs, key=lambda p: (-p['year'], rank[p['status']], -p['number']))]
 for name in ['publications.html', 'ko/publications.html']:
     assert list(pages[name].publications) == expected_order, name
 assert f"{counts['published']} published articles, {counts['accepted']} accepted and {counts['submitted']} submitted manuscripts" in page
 assert f"게재 논문 {counts['published']}건 · 게재 확정 {counts['accepted']}건 · 투고 중 {counts['submitted']}건" in ko_page
-print('PASS: journal details and accepted/submitted/published order in both languages.')
+print('PASS: journal details and submitted/accepted/published order in both languages.')
 
 for filename in ['publications.html', 'ko/publications.html']:
     text = (ROOT / filename).read_text()
