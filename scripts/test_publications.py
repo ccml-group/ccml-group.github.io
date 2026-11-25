@@ -49,6 +49,16 @@ with tempfile.TemporaryDirectory() as directory:
         home = results[root / ('ko/index.html' if filename.startswith('ko/') else 'index.html')]
         for pub_id, label in re.findall(r'<article[^>]*id="(pub-\d+)"[^>]*><span class="pub-number">(\d+)</span>', home):
             assert label == display_numbers[pub_id]
+    data[-1].update(status='accepted', journal=f'Test Journal, {new_year}, Accepted')
+    data.append({'number': new_number + 1, 'journal': f'Manuscript, {new_year}, Submitted', 'authors': 'B. Student, Y. Lee*', 'title': 'Newer submission', 'doi': '', 'year': new_year, 'status': 'submitted'})
+    (root / 'data/publications.json').write_text(json.dumps(data))
+    results = renderer.render_pages()
+    for filename in ['publications.html', 'ko/publications.html']:
+        text = results[root / filename]
+        numbered = re.findall(r'<article[^>]*id="(pub-\d+)"[^>]*><span class="pub-number">(\d+)</span>', text)
+        assert numbered[:2] == [(f'pub-{new_number}', str(new_count + 1)), (f'pub-{new_number + 1}', str(new_count))]
+        assert [int(label) for _, label in numbered] == list(range(new_count + 1, 0, -1))
+        assert f'data-status="accepted"><span class="pub-number">{new_count + 1}</span>' in text
     data.append(data[-1])
     (root / 'data/publications.json').write_text(json.dumps(data))
     try:
@@ -57,4 +67,4 @@ with tempfile.TemporaryDirectory() as directory:
         pass
     else:
         raise AssertionError('Duplicate publication numbers must be rejected')
-print('PASS: new manuscript, new year, bilingual counts, escaping, authorship and duplicate-number rejection.')
+print('PASS: new manuscript, acceptance ordering and renumbering, bilingual counts, escaping, authorship and duplicate-number rejection.')

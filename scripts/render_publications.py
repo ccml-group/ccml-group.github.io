@@ -26,7 +26,7 @@ def render_pages():
         assert pub['status'] in {'published', 'accepted', 'submitted'}
         assert isinstance(pub['year'], int) and pub['title'] and pub['authors']
         assert not pub['doi'] or urlsplit(pub['doi']).scheme == 'https'
-    ordered = sorted(pubs, key=lambda p: (-p['year'], {'submitted': 0, 'accepted': 1, 'published': 2}[p['status']], -p['number']))
+    ordered = sorted(pubs, key=lambda p: (-p['year'], {'accepted': 0, 'submitted': 1, 'published': 2}[p['status']], -p['number']))
     display_numbers = {pub['number']: len(pubs) - index for index, pub in enumerate(ordered)}
 
     def journal(pub):

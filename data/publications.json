@@ -12,14 +12,21 @@
   },
   {
     "number": 37,
-    "journal": "Manuscript, 2026, Submitted",
+    "journal": "Korean Journal of Chemical Engineering, 2026, Accepted",
     "authors": "C. Cho, K. Lee, Y. Lee*, and T. Lee*",
     "title": "Surface Charge Transition Levels and Hole Localization of Dopants in BiVO₄(010) Photoanodes",
     "doi": "",
     "year": 2026,
-    "status": "submitted",
+    "status": "accepted",
     "toc_status": "awaiting-publication",
-    "pi_lead_author": true
+    "pi_lead_author": true,
+    "impact_factor": {
+      "value": "3.4",
+      "year": 2025,
+      "basis": "latest",
+      "source": "https://link.springer.com/journal/11814",
+      "checked_on": "2026-11-25"
+    }
   },
   {
     "number": 36,
