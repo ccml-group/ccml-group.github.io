@@ -55,7 +55,7 @@
     "assets/research/machine-learning-scientific.png": {
       "width": 1600,
       "height": 1600,
-      "source_sha256": "f8a37a1fc19223bd1bf3ce7765b374ef931a58bb1071ada59ed2bbc8e2475486",
+      "source_sha256": "582fec5ae024b81d46e3c893202ed368117f4aceb4e75349a1aec30a1759d90b",
       "variants": [
         {
           "path": "assets/derived/research/machine-learning-scientific-640.webp",
